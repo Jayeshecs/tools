@@ -1,0 +1,182 @@
+2018-09-24 00:15:17.401 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:0 by sven, name: [NEW] -> Cash
+2018-09-24 00:15:17.402 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:0 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.402 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:1 by sven, name: [NEW] -> Creditcard
+2018-09-24 00:15:17.402 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:1 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.402 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:2 by sven, name: [NEW] -> Creditcard Loan
+2018-09-24 00:15:17.402 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:2 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.402 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:3 by sven, name: [NEW] -> Debit/Charges
+2018-09-24 00:15:17.402 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:3 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.402 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:4 by sven, name: [NEW] -> Education
+2018-09-24 00:15:17.402 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:4 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.402 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:5 by sven, name: [NEW] -> Entertainment
+2018-09-24 00:15:17.402 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:5 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.402 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:6 by sven, name: [NEW] -> Food
+2018-09-24 00:15:17.402 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:6 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.402 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:7 by sven, name: [NEW] -> Healthcare
+2018-09-24 00:15:17.402 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:7 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:8 by sven, name: [NEW] -> Home Loan
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:8 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:9 by sven, name: [NEW] -> Insurance
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:9 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:10 by sven, name: [NEW] -> Investment
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:10 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:11 by sven, name: [NEW] -> Loan
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:11 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:12 by sven, name: [NEW] -> Maintenance
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:12 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:13 by sven, name: [NEW] -> Medical
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:13 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:14 by sven, name: [NEW] -> Membership
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:14 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:15 by sven, name: [NEW] -> Miscellaneous
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:15 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:16 by sven, name: [NEW] -> Profession
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:16 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:17 by sven, name: [NEW] -> Shopping
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:17 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:18 by sven, name: [NEW] -> Travel
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:18 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:19 by sven, name: [NEW] -> Utilities Bill
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:19 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:20 by sven, name: [NEW] -> EMI
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.Category:20 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:0 by sven, name: [NEW] -> A/C to A/C
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:0 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:1 by sven, name: [NEW] -> ATM
+2018-09-24 00:15:17.403 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:1 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:2 by sven, name: [NEW] -> Bank Fee
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:2 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:3 by sven, name: [NEW] -> Bill payment
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:3 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:4 by sven, name: [NEW] -> Books
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:4 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:5 by sven, name: [NEW] -> Cab
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:5 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:6 by sven, name: [NEW] -> Car
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:6 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:7 by sven, name: [NEW] -> Car Maintenance
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:7 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:8 by sven, name: [NEW] -> Cashback
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:8 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:9 by sven, name: [NEW] -> Charger
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:9 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:10 by sven, name: [NEW] -> Chintan
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:10 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:11 by sven, name: [NEW] -> Clothes
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:11 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:12 by sven, name: [NEW] -> Coffee
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:12 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:13 by sven, name: [NEW] -> Cookies
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:13 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:14 by sven, name: [NEW] -> Cosmatics
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:14 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:15 by sven, name: [NEW] -> Crypto
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:15 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:16 by sven, name: [NEW] -> Dentist
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:16 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.404 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:17 by sven, name: [NEW] -> Dinning
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:17 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:18 by sven, name: [NEW] -> Doctor
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:18 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:19 by sven, name: [NEW] -> Doctor Fees
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:19 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:20 by sven, name: [NEW] -> E-book
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:20 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:21 by sven, name: [NEW] -> Electricals
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:21 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:22 by sven, name: [NEW] -> Electricity
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:22 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:23 by sven, name: [NEW] -> Electronics
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:23 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:24 by sven, name: [NEW] -> EMI
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:24 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:25 by sven, name: [NEW] -> Footwear
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:25 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:26 by sven, name: [NEW] -> For dad
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:26 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:27 by sven, name: [NEW] -> For Tanushree
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:27 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:28 by sven, name: [NEW] -> Fruits
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:28 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:29 by sven, name: [NEW] -> Fuel
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:29 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:30 by sven, name: [NEW] -> Groceries
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:30 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:31 by sven, name: [NEW] -> Haircut
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:31 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:32 by sven, name: [NEW] -> Hiteshbhai
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:32 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:33 by sven, name: [NEW] -> Home
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:33 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.405 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:34 by sven, name: [NEW] -> Home Loan
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:34 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:35 by sven, name: [NEW] -> Household
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:35 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:36 by sven, name: [NEW] -> Income Tax
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:36 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:37 by sven, name: [NEW] -> Internet
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:37 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:38 by sven, name: [NEW] -> Juice
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:38 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:39 by sven, name: [NEW] -> Keshavdham
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:39 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:40 by sven, name: [NEW] -> Loan Repaid
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:40 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:41 by sven, name: [NEW] -> Maternity
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:41 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:42 by sven, name: [NEW] -> Medicine
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:42 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:43 by sven, name: [NEW] -> Mediclaim
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:43 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:44 by sven, name: [NEW] -> Mobile
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:44 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:45 by sven, name: [NEW] -> Movie
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:45 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:46 by sven, name: [NEW] -> Online
+2018-09-24 00:15:17.406 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:46 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:47 by sven, name: [NEW] -> Other
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:47 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:48 by sven, name: [NEW] -> PayTM
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:48 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:49 by sven, name: [NEW] -> Premium
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:49 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:50 by sven, name: [NEW] -> Pre-payment
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:50 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:51 by sven, name: [NEW] -> Processing Fees
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:51 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:52 by sven, name: [NEW] -> Satish
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:52 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:53 by sven, name: [NEW] -> School Fees
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:53 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:54 by sven, name: [NEW] -> Snacks
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:54 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:55 by sven, name: [NEW] -> Sterling
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:55 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:56 by sven, name: [NEW] -> Sunglasses
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:56 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:57 by sven, name: [NEW] -> Sweets
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:57 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:58 by sven, name: [NEW] -> Television
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:58 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:59 by sven, name: [NEW] -> Test
+2018-09-24 00:15:17.407 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:59 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.408 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:60 by sven, name: [NEW] -> Toys
+2018-09-24 00:15:17.408 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:60 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.408 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:61 by sven, name: [NEW] -> Vaccination
+2018-09-24 00:15:17.408 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:61 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.408 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:62 by sven, name: [NEW] -> Web Hosting
+2018-09-24 00:15:17.408 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:62 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.408 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:63 by sven, name: [NEW] -> Wine
+2018-09-24 00:15:17.408 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.SubCategory:63 by sven, notes: [NEW] -> null
+2018-09-24 00:15:17.408 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.StatementSource:0 by sven, name: [NEW] -> HDFC_1668
+2018-09-24 00:15:17.408 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.StatementSource:0 by sven, type: [NEW] -> SAVING_ACCOUNT
+2018-09-24 00:15:17.408 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.StatementSource:1 by sven, name: [NEW] -> HDFC_3789
+2018-09-24 00:15:17.408 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.StatementSource:1 by sven, type: [NEW] -> SAVING_ACCOUNT
+2018-09-24 00:15:17.408 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.StatementSource:2 by sven, name: [NEW] -> HDFC_9371
+2018-09-24 00:15:17.408 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.StatementSource:2 by sven, type: [NEW] -> SAVING_ACCOUNT
+2018-09-24 00:15:17.408 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.StatementSource:3 by sven, name: [NEW] -> Card No: 4854 99XX XXXX 6394
+2018-09-24 00:15:17.408 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.StatementSource:3 by sven, type: [NEW] -> CREDIT_CARD
+2018-09-24 00:15:17.408 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.StatementSource:4 by sven, name: [NEW] -> Card No: 4854 99XX XXXX 0335
+2018-09-24 00:15:17.408 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.StatementSource:4 by sven, type: [NEW] -> CREDIT_CARD
+2018-09-24 00:15:17.408 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.StatementSource:5 by sven, name: [NEW] -> Card No: 4639 17XX XXXX 8535
+2018-09-24 00:15:17.408 dc0cee4d-eeca-45a1-81e7-65ae33e6ae94,0: statements.StatementSource:5 by sven, type: [NEW] -> CREDIT_CARD

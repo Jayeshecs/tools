@@ -5,6 +5,7 @@ package tools.scrapper.web;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
@@ -39,6 +40,9 @@ public class WebScrapper {
 	@Parameter(names = { "--url", "-u" }, description = "URL to scrap for dynamic html content", required = true, help = true)
 	private String url;
 	
+	@Parameter(names = { "--debug", "-d" }, description = "Debug flag to log request & response of every page getting loaded", required = false, help = false)
+	private Boolean debug = Boolean.FALSE;
+	
 	public static void main(String[] args) {
 		WebScrapper scrapper = new WebScrapper();
         JCommander.newBuilder()
@@ -51,16 +55,8 @@ public class WebScrapper {
 	private void run() {
 		log.info("WebScrapper run() - START"); 
 		try (final WebClient webClient = new WebClient()) {
-// Uncomment below if you want to log every request and response detail during page load
-//			new WebConnectionWrapper(webClient) {
-//				@Override
-//				public WebResponse getResponse(WebRequest request) throws IOException {
-//					log.info("Request: %s", request.getUrl());
-//					WebResponse response = super.getResponse(request);
-//					log.info("Response: %s [Status: %s, Content: %s (%s)]", request.getUrl(), response.getStatusMessage(), response.getContentType(), response.getContentAsString());
-//					return response;
-//				}
-//			};
+			
+			registerRequestResponseLogger(webClient);
 			// Get the first page
 			log.info("Get page from URL %s", url); 
 	        WebRequest webRequest = new WebRequest(new URL(url), HttpMethod.GET);
@@ -103,8 +99,28 @@ public class WebScrapper {
 				log.getWriter().close();
 			} catch (IOException e) {
 				// DO NOTHING
-				e.printStackTrace();
+				e.printStackTrace(new PrintWriter(log.getWriter()));
 			}
 		}
+	}
+
+	/**
+	 * if you want to log every request and response detail during page load
+	 * 
+	 * @param webClient
+	 */
+	private void registerRequestResponseLogger(WebClient webClient) {
+		if (!debug) {
+			return ;
+		}
+		new WebConnectionWrapper(webClient) {
+			@Override
+			public WebResponse getResponse(WebRequest request) throws IOException {
+				log.info("Request: %s", request.getUrl());
+				WebResponse response = super.getResponse(request);
+				log.info("Response: %s [Status: %s, Content: %s (%s)]", request.getUrl(), response.getStatusMessage(), response.getContentType(), response.getContentAsString());
+				return response;
+			}
+		};
 	}
 }
