@@ -33,7 +33,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import domain.statements.dom.impl.ref.SubCategory;
-import domain.statements.fixture.txn.SubCategory_persona;
+import domain.statements.fixture.ref.SubCategory_persona;
 import domain.statements.integtests.SimpleModuleIntegTestAbstract;
 
 public class SubCategory_IntegTest extends SimpleModuleIntegTestAbstract {

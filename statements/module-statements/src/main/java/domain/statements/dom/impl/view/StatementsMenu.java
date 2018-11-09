@@ -18,7 +18,6 @@
  */
 package domain.statements.dom.impl.view;
 
-import java.util.Arrays;
 import java.util.List;
 
 import org.apache.isis.applib.annotation.Action;
@@ -32,6 +31,7 @@ import org.apache.isis.applib.annotation.SemanticsOf;
 import org.apache.isis.applib.services.jdosupport.IsisJdoSupport_v3_2;
 import org.apache.isis.applib.services.repository.RepositoryService;
 
+import domain.statements.dom.impl.cfg.StatementReader;
 import domain.statements.dom.impl.ref.Category;
 import domain.statements.dom.impl.ref.SubCategory;
 import domain.statements.dom.impl.txn.StatementSource;
@@ -73,6 +73,13 @@ public class StatementsMenu {
     @MemberOrder(sequence = "5")
     public List<Transaction> transactions() {
         return repositoryService.allInstances(Transaction.class);
+    }
+
+    @Action(semantics = SemanticsOf.SAFE)
+    @ActionLayout(bookmarking = BookmarkPolicy.AS_ROOT)
+    @MemberOrder(sequence = "7")
+    public List<StatementReader> readers() {
+        return repositoryService.allInstances(StatementReader.class);
     }
 
     @javax.inject.Inject

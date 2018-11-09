@@ -23,9 +23,9 @@ import java.util.List;
 import org.apache.isis.applib.fixturescripts.FixtureScript;
 
 import domain.statements.fixture.SimpleObject_persona;
-import domain.statements.fixture.txn.Category_persona;
+import domain.statements.fixture.ref.Category_persona;
+import domain.statements.fixture.ref.SubCategory_persona;
 import domain.statements.fixture.txn.StatementSource_persona;
-import domain.statements.fixture.txn.SubCategory_persona;
 
 /**
  * Run the app but setting up any fixtures.

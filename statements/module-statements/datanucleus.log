@@ -5480,3 +5480,281 @@ org.datanucleus.exceptions.ClassNotResolvedException: Class "domain.statements.d
 18:19:57,754 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
 18:19:57,757 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
 18:19:57,757 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:24:56,220 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:24:56,543 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:24:56,867 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:24:56,868 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:24:56,869 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:24:56,871 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:24:56,872 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:24:56,873 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:24:56,874 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:24:56,874 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:25:57,555 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:25:58,195 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:25:58,278 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:25:58,957 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:25:58,983 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:25:58,984 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:25:58,988 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:25:58,989 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:25:58,991 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:25:58,993 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:25:58,995 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:25:58,995 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:25:59,447 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:25:59,448 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:25:59,449 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:25:59,450 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:25:59,451 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:25:59,452 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:25:59,454 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:25:59,454 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:25:59,677 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:26:00,015 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:26:00,337 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:26:00,338 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:26:00,339 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:26:00,340 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:26:00,341 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:26:00,342 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:26:00,343 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:26:00,343 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:26:43,559 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:26:44,060 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:26:44,429 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:26:44,674 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:26:44,675 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:26:44,677 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:26:44,679 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:26:44,681 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:26:44,682 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:26:44,684 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:26:44,684 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:26:44,963 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:26:45,460 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:26:45,461 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:26:45,462 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:26:45,466 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:26:45,467 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:26:45,470 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:26:45,472 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:26:45,472 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:26:45,569 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:26:45,904 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:26:46,210 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:26:46,211 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:26:46,212 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:26:46,213 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:26:46,214 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:26:46,215 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:26:46,216 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:26:46,216 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:27:31,108 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:27:31,487 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:27:31,947 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:27:31,948 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:27:31,949 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:27:31,950 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:27:31,951 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:27:31,952 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:27:31,954 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:27:31,954 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:27:32,355 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:27:32,717 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:27:33,064 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:27:33,065 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:27:33,066 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:27:33,067 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:27:33,068 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:27:33,069 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:27:33,070 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:27:33,070 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:28:00,600 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:28:01,509 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:28:02,516 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:28:02,517 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:28:02,518 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:28:02,521 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:28:02,523 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:28:02,525 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:28:02,528 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:28:02,529 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:28:03,463 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:28:04,112 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:28:04,698 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:28:04,700 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:28:04,701 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:28:04,703 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:28:04,705 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:28:04,708 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:28:04,711 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:28:04,711 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:28:05,046 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:28:05,356 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:28:05,824 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:28:05,825 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:28:05,826 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:28:05,827 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:28:05,828 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:28:05,829 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:28:05,830 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:28:05,831 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:28:22,573 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:28:23,026 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:28:23,542 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:28:23,544 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:28:23,545 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:28:23,547 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:28:23,548 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:28:23,549 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:28:23,550 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:28:23,551 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:28:24,967 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:28:25,302 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:28:25,764 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:28:25,765 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:28:25,766 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:28:25,767 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:28:25,768 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:28:25,771 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:28:25,773 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:28:25,773 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:28:26,310 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:28:26,639 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:28:27,106 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:28:27,107 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:28:27,109 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:28:27,111 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:28:27,112 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:28:27,112 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:28:27,114 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:28:27,114 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:29:26,272 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:29:26,745 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:29:26,981 (main) ERROR [DataNucleus.MetaData] - Class "domain.statements.fixture.txn.CategoryBuilder" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "domain.statements.fixture.txn.CategoryBuilder" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:219)
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:347)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:591)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:719)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:501)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1157)
+
+18:29:26,982 (main) ERROR [DataNucleus.MetaData] - Class "domain.statements.fixture.txn.Category_persona$PersistAll" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "domain.statements.fixture.txn.Category_persona$PersistAll" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:219)
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:347)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:591)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:719)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:501)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1157)
+
+18:29:26,990 (main) ERROR [DataNucleus.MetaData] - Class "domain.statements.fixture.txn.Category_persona" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "domain.statements.fixture.txn.Category_persona" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:219)
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:347)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:591)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:719)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:501)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1157)
+
+18:29:27,059 (main) ERROR [DataNucleus.MetaData] - Class "domain.statements.fixture.txn.SubCategoryBuilder" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "domain.statements.fixture.txn.SubCategoryBuilder" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:219)
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:347)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:591)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:719)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:501)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1157)
+
+18:29:27,059 (main) ERROR [DataNucleus.MetaData] - Class "domain.statements.fixture.txn.SubCategory_persona$PersistAll" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "domain.statements.fixture.txn.SubCategory_persona$PersistAll" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:219)
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:347)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:591)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:719)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:501)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1157)
+
+18:29:27,060 (main) ERROR [DataNucleus.MetaData] - Class "domain.statements.fixture.txn.SubCategory_persona" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "domain.statements.fixture.txn.SubCategory_persona" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:219)
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:347)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:591)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:719)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:501)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1157)
+
+18:29:27,334 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:29:27,335 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:29:27,336 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:29:27,337 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:29:27,337 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:29:27,338 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:29:27,340 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:29:27,340 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:29:27,696 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:29:28,020 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:29:28,097 (main) ERROR [DataNucleus.MetaData] - Class "domain.statements.fixture.txn.CategoryBuilder" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "domain.statements.fixture.txn.CategoryBuilder" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:219)
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:347)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:591)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:719)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:501)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1157)
+
+18:29:28,097 (main) ERROR [DataNucleus.MetaData] - Class "domain.statements.fixture.txn.Category_persona$PersistAll" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "domain.statements.fixture.txn.Category_persona$PersistAll" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:219)
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:347)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:591)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:719)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:501)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1157)
+
+18:29:28,098 (main) ERROR [DataNucleus.MetaData] - Class "domain.statements.fixture.txn.Category_persona" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "domain.statements.fixture.txn.Category_persona" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:219)
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:347)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:591)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:719)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:501)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1157)
+
+18:29:28,109 (main) ERROR [DataNucleus.MetaData] - Class "domain.statements.fixture.txn.SubCategoryBuilder" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "domain.statements.fixture.txn.SubCategoryBuilder" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:219)
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:347)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:591)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:719)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:501)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1157)
+
+18:29:28,110 (main) ERROR [DataNucleus.MetaData] - Class "domain.statements.fixture.txn.SubCategory_persona$PersistAll" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "domain.statements.fixture.txn.SubCategory_persona$PersistAll" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:219)
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:347)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:591)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:719)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:501)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1157)
+
+18:29:28,110 (main) ERROR [DataNucleus.MetaData] - Class "domain.statements.fixture.txn.SubCategory_persona" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "domain.statements.fixture.txn.SubCategory_persona" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:219)
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:347)
+	at org.datanucleus.metadata.MetaDataManagerImpl.loadClasses(MetaDataManagerImpl.java:591)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:719)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:501)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1157)
+
+18:29:28,379 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:29:28,379 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:29:28,380 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:29:28,381 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:29:28,382 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:29:28,382 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:29:28,384 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:29:28,384 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.

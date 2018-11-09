@@ -17,34 +17,37 @@
  *  under the License.
  */
 
-package domain.statements.fixture.txn;
+package domain.statements.fixture.cfg;
 
 import org.apache.isis.applib.fixturescripts.BuilderScriptAbstract;
 
-import domain.statements.dom.impl.ref.SubCategory;
-import domain.statements.dom.srv.ref.SubCategoryService;
+import domain.statements.dom.impl.cfg.ReaderType;
+import domain.statements.dom.srv.cfg.ReaderTypeService;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
 @Accessors(chain = true)
-public class SubCategoryBuilder extends BuilderScriptAbstract<SubCategory, SubCategoryBuilder> {
+public class ReaderTypeBuilder extends BuilderScriptAbstract<ReaderType, ReaderTypeBuilder> {
 
     @Getter @Setter
     private String name;
 
+    @Getter @Setter
+    private Class<?> clazz;
+
     @Getter
-    private SubCategory object;
+    private ReaderType object;
 
     @Override
     protected void execute(final ExecutionContext ec) {
 
         checkParam("name", ec, String.class);
-
-        object = wrap(subCategoryService).create(name);
+        checkParam("clazz", ec, Class.class);
+        object = wrap(readerTypeService).register(name, clazz);
     }
 
     @javax.inject.Inject
-    SubCategoryService subCategoryService;
+    ReaderTypeService readerTypeService;
 
 }

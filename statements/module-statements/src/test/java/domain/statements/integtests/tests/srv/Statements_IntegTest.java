@@ -33,9 +33,9 @@ import domain.statements.dom.impl.ref.TransactionType;
 import domain.statements.dom.impl.txn.StatementSource;
 import domain.statements.dom.impl.txn.Transaction;
 import domain.statements.dom.impl.view.StatementsMenu;
-import domain.statements.fixture.txn.Category_persona;
+import domain.statements.fixture.ref.Category_persona;
+import domain.statements.fixture.ref.SubCategory_persona;
 import domain.statements.fixture.txn.StatementSource_persona;
-import domain.statements.fixture.txn.SubCategory_persona;
 import domain.statements.integtests.SimpleModuleIntegTestAbstract;
 
 public class Statements_IntegTest extends SimpleModuleIntegTestAbstract {

@@ -17,7 +17,7 @@
  *  under the License.
  */
 
-package domain.statements.fixture.txn;
+package domain.statements.fixture.ref;
 
 import org.apache.isis.applib.fixturescripts.PersonaWithBuilderScript;
 import org.apache.isis.applib.fixturescripts.PersonaWithFinder;

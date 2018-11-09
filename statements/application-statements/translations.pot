@@ -23,7 +23,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2018-09-23 04:00:03+\n"
+"POT-Creation-Date: 2018-11-09 18:30:44+\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -90,7 +90,7 @@ msgid "Cancel"
 msgstr ""
 
 
-#: domain.statements.dom.impl.txn.StatementSourceType#CASH
+#: domain.statements.dom.impl.ref.StatementSourceType#CASH
 msgid "Cash"
 msgstr ""
 
@@ -102,6 +102,11 @@ msgstr ""
 
 #: domain.statements.dom.impl.txn.Transaction#category
 msgid "Category"
+msgstr ""
+
+
+#: domain.statements.dom.impl.cfg.ReaderType#clazz
+msgid "Clazz"
 msgstr ""
 
 
@@ -131,20 +136,22 @@ msgstr ""
 
 
 #: domain.statements.dom.impl.SimpleObjects#create()
-#: domain.statements.dom.srv.txn.CategoryService#create()
+#: domain.statements.dom.impl.txn.StatementSource#create()
+#: domain.statements.dom.srv.cfg.StatementReaderService#create()
+#: domain.statements.dom.srv.ref.CategoryService#create()
+#: domain.statements.dom.srv.ref.SubCategoryService#create()
 #: domain.statements.dom.srv.txn.StatementSourceService#create()
-#: domain.statements.dom.srv.txn.SubCategoryService#create()
 #: domain.statements.dom.srv.txn.TransactionService#create()
 msgid "Create"
 msgstr ""
 
 
-#: domain.statements.dom.impl.txn.TransactionType#CREDIT
+#: domain.statements.dom.impl.ref.TransactionType#CREDIT
 msgid "Credit"
 msgstr ""
 
 
-#: domain.statements.dom.impl.txn.StatementSourceType#CREDIT_CARD
+#: domain.statements.dom.impl.ref.StatementSourceType#CREDIT_CARD
 msgid "Credit Card"
 msgstr ""
 
@@ -154,7 +161,7 @@ msgid "Current"
 msgstr ""
 
 
-#: domain.statements.dom.impl.txn.TransactionType#DEBUT
+#: domain.statements.dom.impl.ref.TransactionType#DEBUT
 msgid "Debut"
 msgstr ""
 
@@ -167,19 +174,26 @@ msgstr ""
 #: domain.statements.dom.AbstractEntity#delete()
 #: domain.statements.dom.AbstractNamedEntity#delete()
 #: domain.statements.dom.impl.SimpleObject#delete()
-#: domain.statements.dom.impl.txn.Category#delete()
+#: domain.statements.dom.impl.cfg.StatementReader#delete()
+#: domain.statements.dom.impl.ref.Category#delete()
+#: domain.statements.dom.impl.ref.SubCategory#delete()
 #: domain.statements.dom.impl.txn.StatementSource#delete()
-#: domain.statements.dom.impl.txn.SubCategory#delete()
 #: domain.statements.dom.impl.txn.Transaction#delete()
 msgid "Delete"
 msgstr ""
 
 
+#: domain.statements.dom.srv.txn.StatementSource_create#$$(domain.statements.dom.impl.ref.StatementSourceType,java.lang.String,java.lang.String)
+msgid "Description of statement source"
+msgstr ""
+
+
 #: domain.statements.dom.AbstractNamedEntity#downloadJdoMetadata()
 #: domain.statements.dom.impl.SimpleObject#downloadJdoMetadata()
-#: domain.statements.dom.impl.txn.Category#downloadJdoMetadata()
+#: domain.statements.dom.impl.cfg.StatementReader#downloadJdoMetadata()
+#: domain.statements.dom.impl.ref.Category#downloadJdoMetadata()
+#: domain.statements.dom.impl.ref.SubCategory#downloadJdoMetadata()
 #: domain.statements.dom.impl.txn.StatementSource#downloadJdoMetadata()
-#: domain.statements.dom.impl.txn.SubCategory#downloadJdoMetadata()
 #: domain.statements.dom.impl.txn.Transaction#downloadJdoMetadata()
 msgid "Download Jdo Metadata"
 msgstr ""
@@ -189,9 +203,11 @@ msgstr ""
 #: domain.statements.dom.AbstractNamedEntity#downloadLayoutXml()
 #: domain.statements.dom.IEntity#downloadLayoutXml()
 #: domain.statements.dom.impl.SimpleObject#downloadLayoutXml()
-#: domain.statements.dom.impl.txn.Category#downloadLayoutXml()
+#: domain.statements.dom.impl.cfg.ReaderType#downloadLayoutXml()
+#: domain.statements.dom.impl.cfg.StatementReader#downloadLayoutXml()
+#: domain.statements.dom.impl.ref.Category#downloadLayoutXml()
+#: domain.statements.dom.impl.ref.SubCategory#downloadLayoutXml()
 #: domain.statements.dom.impl.txn.StatementSource#downloadLayoutXml()
-#: domain.statements.dom.impl.txn.SubCategory#downloadLayoutXml()
 #: domain.statements.dom.impl.txn.Transaction#downloadLayoutXml()
 #: domain.statements.dom.srv.AbstractEntityService#downloadLayoutXml()
 #: domain.statements.dom.srv.AbstractService#downloadLayoutXml()
@@ -205,6 +221,7 @@ msgstr ""
 #: java.lang.reflect.Type#downloadLayoutXml()
 #: java.util.Collection#downloadLayoutXml()
 #: java.util.List#downloadLayoutXml()
+#: java.util.Map#downloadLayoutXml()
 #: java.util.Set#downloadLayoutXml()
 #: java.util.function.Consumer#downloadLayoutXml()
 #: javax.jdo.listener.InstanceLifecycleListener#downloadLayoutXml()
@@ -394,9 +411,10 @@ msgstr ""
 
 #: domain.statements.dom.AbstractNamedEntity#datanucleusIdLong()
 #: domain.statements.dom.impl.SimpleObject#datanucleusIdLong()
-#: domain.statements.dom.impl.txn.Category#datanucleusIdLong()
+#: domain.statements.dom.impl.cfg.StatementReader#datanucleusIdLong()
+#: domain.statements.dom.impl.ref.Category#datanucleusIdLong()
+#: domain.statements.dom.impl.ref.SubCategory#datanucleusIdLong()
 #: domain.statements.dom.impl.txn.StatementSource#datanucleusIdLong()
-#: domain.statements.dom.impl.txn.SubCategory#datanucleusIdLong()
 #: domain.statements.dom.impl.txn.Transaction#datanucleusIdLong()
 #: domain.statements.dom.impl.txn.Transaction#id
 #: org.apache.isis.core.metamodel.services.jdosupport.Persistable_datanucleusIdLong#prop()
@@ -439,7 +457,7 @@ msgid "List All"
 msgstr ""
 
 
-#: domain.statements.dom.impl.txn.StatementSourceType#LOAN_ACCOUNT
+#: domain.statements.dom.impl.ref.StatementSourceType#LOAN_ACCOUNT
 msgid "Loan Account"
 msgstr ""
 
@@ -462,13 +480,23 @@ msgstr ""
 #: domain.statements.dom.impl.SimpleObject#updateName(java.lang.String)
 #: domain.statements.dom.impl.SimpleObjects#create(java.lang.String)
 #: domain.statements.dom.impl.SimpleObjects#findByName(java.lang.String)
-#: domain.statements.dom.impl.txn.Category#name
-#: domain.statements.dom.impl.txn.Category#updateName(java.lang.String)
+#: domain.statements.dom.impl.cfg.ReaderType#name
+#: domain.statements.dom.impl.cfg.StatementReader#name
+#: domain.statements.dom.impl.cfg.StatementReader#updateName(java.lang.String)
+#: domain.statements.dom.impl.ref.Category#name
+#: domain.statements.dom.impl.ref.Category#updateName(java.lang.String)
+#: domain.statements.dom.impl.ref.SubCategory#name
+#: domain.statements.dom.impl.ref.SubCategory#updateName(java.lang.String)
 #: domain.statements.dom.impl.txn.StatementSource#name
 #: domain.statements.dom.impl.txn.StatementSource#updateName(java.lang.String)
-#: domain.statements.dom.impl.txn.SubCategory#name
-#: domain.statements.dom.impl.txn.SubCategory#updateName(java.lang.String)
+#: domain.statements.dom.srv.txn.StatementSource_create#$$(domain.statements.dom.impl.ref.StatementSourceType,java.lang.String,java.lang.String)
+#: domain.statements.dom.srv.txn.StatementSource_search#$$(domain.statements.dom.impl.ref.StatementSourceType,java.lang.String)
 msgid "Name"
+msgstr ""
+
+
+#: domain.statements.dom.srv.txn.StatementSource_create#$$(domain.statements.dom.impl.ref.StatementSourceType,java.lang.String,java.lang.String)
+msgid "Name of statement source"
 msgstr ""
 
 
@@ -508,8 +536,9 @@ msgstr ""
 
 
 #: domain.statements.dom.impl.SimpleObject#notes
-#: domain.statements.dom.impl.txn.Category#notes
-#: domain.statements.dom.impl.txn.SubCategory#notes
+#: domain.statements.dom.impl.ref.Category#notes
+#: domain.statements.dom.impl.ref.SubCategory#notes
+#: domain.statements.dom.srv.txn.StatementSource_create#$$(domain.statements.dom.impl.ref.StatementSourceType,java.lang.String,java.lang.String)
 msgid "Notes"
 msgstr ""
 
@@ -523,9 +552,11 @@ msgstr ""
 #: domain.statements.dom.AbstractNamedEntity#openRestApi()
 #: domain.statements.dom.IEntity#openRestApi()
 #: domain.statements.dom.impl.SimpleObject#openRestApi()
-#: domain.statements.dom.impl.txn.Category#openRestApi()
+#: domain.statements.dom.impl.cfg.ReaderType#openRestApi()
+#: domain.statements.dom.impl.cfg.StatementReader#openRestApi()
+#: domain.statements.dom.impl.ref.Category#openRestApi()
+#: domain.statements.dom.impl.ref.SubCategory#openRestApi()
 #: domain.statements.dom.impl.txn.StatementSource#openRestApi()
-#: domain.statements.dom.impl.txn.SubCategory#openRestApi()
 #: domain.statements.dom.impl.txn.Transaction#openRestApi()
 #: domain.statements.dom.srv.AbstractEntityService#openRestApi()
 #: domain.statements.dom.srv.AbstractService#openRestApi()
@@ -539,6 +570,7 @@ msgstr ""
 #: java.lang.reflect.Type#openRestApi()
 #: java.util.Collection#openRestApi()
 #: java.util.List#openRestApi()
+#: java.util.Map#openRestApi()
 #: java.util.Set#openRestApi()
 #: java.util.function.Consumer#openRestApi()
 #: javax.jdo.listener.InstanceLifecycleListener#openRestApi()
@@ -674,6 +706,11 @@ msgid "Prop"
 msgstr ""
 
 
+#: domain.statements.dom.impl.cfg.StatementReader#properties
+msgid "Properties"
+msgstr ""
+
+
 #: org.apache.isis.applib.services.appfeat.ApplicationMemberType#PROPERTY
 msgid "Property"
 msgstr ""
@@ -699,13 +736,25 @@ msgid "Read"
 msgstr ""
 
 
+#: domain.statements.dom.impl.cfg.StatementReader#readerType
+msgid "Reader Type"
+msgstr ""
+
+
+#: domain.statements.dom.impl.view.StatementsMenu#readers()
+msgid "Readers"
+msgstr ""
+
+
 #: domain.statements.dom.AbstractEntity#rebuildMetamodel()
 #: domain.statements.dom.AbstractNamedEntity#rebuildMetamodel()
 #: domain.statements.dom.IEntity#rebuildMetamodel()
 #: domain.statements.dom.impl.SimpleObject#rebuildMetamodel()
-#: domain.statements.dom.impl.txn.Category#rebuildMetamodel()
+#: domain.statements.dom.impl.cfg.ReaderType#rebuildMetamodel()
+#: domain.statements.dom.impl.cfg.StatementReader#rebuildMetamodel()
+#: domain.statements.dom.impl.ref.Category#rebuildMetamodel()
+#: domain.statements.dom.impl.ref.SubCategory#rebuildMetamodel()
 #: domain.statements.dom.impl.txn.StatementSource#rebuildMetamodel()
-#: domain.statements.dom.impl.txn.SubCategory#rebuildMetamodel()
 #: domain.statements.dom.impl.txn.Transaction#rebuildMetamodel()
 #: domain.statements.dom.srv.AbstractEntityService#rebuildMetamodel()
 #: domain.statements.dom.srv.AbstractService#rebuildMetamodel()
@@ -719,6 +768,7 @@ msgstr ""
 #: java.lang.reflect.Type#rebuildMetamodel()
 #: java.util.Collection#rebuildMetamodel()
 #: java.util.List#rebuildMetamodel()
+#: java.util.Map#rebuildMetamodel()
 #: java.util.Set#rebuildMetamodel()
 #: java.util.function.Consumer#rebuildMetamodel()
 #: javax.jdo.listener.InstanceLifecycleListener#rebuildMetamodel()
@@ -876,7 +926,7 @@ msgid "Safe And Request Cacheable"
 msgstr ""
 
 
-#: domain.statements.dom.impl.txn.StatementSourceType#SAVING_ACCOUNT
+#: domain.statements.dom.impl.ref.StatementSourceType#SAVING_ACCOUNT
 msgid "Saving Account"
 msgstr ""
 
@@ -893,6 +943,11 @@ msgid "Script-specific parameters (if any).  The format depends on the script im
 msgstr ""
 
 
+#: domain.statements.dom.impl.txn.StatementSource#search()
+msgid "Search"
+msgstr ""
+
+
 #: domain.statements.dom.impl.SimpleObjects
 msgid "Simple Objects"
 msgstr ""
@@ -900,11 +955,6 @@ msgstr ""
 
 #: domain.statements.dom.impl.txn.Transaction#source
 msgid "Source"
-msgstr ""
-
-
-#: domain.statements.dom.impl.view.StatementsMenu#statementSourceTypes()
-msgid "Statement Source Types"
 msgstr ""
 
 
@@ -938,13 +988,14 @@ msgid "Switch To Writing Translations"
 msgstr ""
 
 
-#: domain.statements.dom.impl.txn.Transaction#transactionDate
-msgid "Transaction Date"
+#: domain.statements.dom.impl.txn.StatementSource#create()
+#: domain.statements.dom.srv.txn.StatementSource_create#$$()
+msgid "To create statement source"
 msgstr ""
 
 
-#: domain.statements.dom.impl.view.StatementsMenu#transactionTypes()
-msgid "Transaction Types"
+#: domain.statements.dom.impl.txn.Transaction#transactionDate
+msgid "Transaction Date"
 msgstr ""
 
 
@@ -955,7 +1006,14 @@ msgstr ""
 
 #: domain.statements.dom.impl.txn.StatementSource#type
 #: domain.statements.dom.impl.txn.Transaction#type
+#: domain.statements.dom.srv.txn.StatementSource_create#$$(domain.statements.dom.impl.ref.StatementSourceType,java.lang.String,java.lang.String)
+#: domain.statements.dom.srv.txn.StatementSource_search#$$(domain.statements.dom.impl.ref.StatementSourceType,java.lang.String)
 msgid "Type"
+msgstr ""
+
+
+#: domain.statements.dom.srv.txn.StatementSource_create#$$(domain.statements.dom.impl.ref.StatementSourceType,java.lang.String,java.lang.String)
+msgid "Type or nature of statement source"
 msgstr ""
 
 
@@ -966,9 +1024,10 @@ msgstr ""
 
 #: domain.statements.dom.AbstractNamedEntity#updateName()
 #: domain.statements.dom.impl.SimpleObject#updateName()
-#: domain.statements.dom.impl.txn.Category#updateName()
+#: domain.statements.dom.impl.cfg.StatementReader#updateName()
+#: domain.statements.dom.impl.ref.Category#updateName()
+#: domain.statements.dom.impl.ref.SubCategory#updateName()
 #: domain.statements.dom.impl.txn.StatementSource#updateName()
-#: domain.statements.dom.impl.txn.SubCategory#updateName()
 msgid "Update Name"
 msgstr ""
 
@@ -987,12 +1046,14 @@ msgstr ""
 #: domain.statements.dom.AbstractNamedEntity#datanucleusVersionTimestamp()
 #: domain.statements.dom.impl.SimpleObject#datanucleusVersionLong()
 #: domain.statements.dom.impl.SimpleObject#datanucleusVersionTimestamp()
-#: domain.statements.dom.impl.txn.Category#datanucleusVersionLong()
-#: domain.statements.dom.impl.txn.Category#datanucleusVersionTimestamp()
+#: domain.statements.dom.impl.cfg.StatementReader#datanucleusVersionLong()
+#: domain.statements.dom.impl.cfg.StatementReader#datanucleusVersionTimestamp()
+#: domain.statements.dom.impl.ref.Category#datanucleusVersionLong()
+#: domain.statements.dom.impl.ref.Category#datanucleusVersionTimestamp()
+#: domain.statements.dom.impl.ref.SubCategory#datanucleusVersionLong()
+#: domain.statements.dom.impl.ref.SubCategory#datanucleusVersionTimestamp()
 #: domain.statements.dom.impl.txn.StatementSource#datanucleusVersionLong()
 #: domain.statements.dom.impl.txn.StatementSource#datanucleusVersionTimestamp()
-#: domain.statements.dom.impl.txn.SubCategory#datanucleusVersionLong()
-#: domain.statements.dom.impl.txn.SubCategory#datanucleusVersionTimestamp()
 #: domain.statements.dom.impl.txn.Transaction#datanucleusVersionLong()
 #: domain.statements.dom.impl.txn.Transaction#datanucleusVersionTimestamp()
 #: org.apache.isis.core.metamodel.services.jdosupport.Persistable_datanucleusVersionLong#prop()

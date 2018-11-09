@@ -24,9 +24,9 @@ import org.apache.isis.applib.AppManifest2;
 import org.apache.isis.applib.fixturescripts.FixtureScript;
 import org.apache.isis.applib.services.metamodel.MetaModelService;
 
-import domain.statements.fixture.txn.Category_persona;
+import domain.statements.fixture.ref.Category_persona;
+import domain.statements.fixture.ref.SubCategory_persona;
 import domain.statements.fixture.txn.StatementSource_persona;
-import domain.statements.fixture.txn.SubCategory_persona;
 
 public class StatementsDemo extends FixtureScript {
 

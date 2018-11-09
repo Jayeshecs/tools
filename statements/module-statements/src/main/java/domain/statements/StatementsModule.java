@@ -49,10 +49,13 @@ public class StatementsModule extends ModuleAbstract {
         };
     }
 
-    public static class PropertyDomainEvent<S,T>
+    @SuppressWarnings("serial")
+	public static class PropertyDomainEvent<S,T>
             extends org.apache.isis.applib.events.domain.PropertyDomainEvent<S,T> {}
-    public static class CollectionDomainEvent<S,T>
+    @SuppressWarnings("serial")
+	public static class CollectionDomainEvent<S,T>
             extends org.apache.isis.applib.events.domain.CollectionDomainEvent<S,T> {}
-    public static class ActionDomainEvent<S> extends
+    @SuppressWarnings("serial")
+	public static class ActionDomainEvent<S> extends
             org.apache.isis.applib.events.domain.ActionDomainEvent<S> {}
 }

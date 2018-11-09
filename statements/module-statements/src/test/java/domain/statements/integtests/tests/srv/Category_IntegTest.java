@@ -36,7 +36,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import domain.statements.dom.impl.ref.Category;
-import domain.statements.fixture.txn.Category_persona;
+import domain.statements.fixture.ref.Category_persona;
 import domain.statements.integtests.SimpleModuleIntegTestAbstract;
 
 public class Category_IntegTest extends SimpleModuleIntegTestAbstract {
