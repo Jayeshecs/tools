@@ -2,6 +2,7 @@ logs/
 target/
 .settings/
 
+**/*.log
 .classpath
 .project
 datanucleus.log

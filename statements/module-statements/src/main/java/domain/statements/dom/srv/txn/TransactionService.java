@@ -20,6 +20,7 @@ package domain.statements.dom.srv.txn;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 import javax.jdo.JDOQLTypedQuery;
 
@@ -65,6 +66,25 @@ public class TransactionService extends AbstractService {
         q = q.filter(cand.reference.eq(q.stringParameter("reference"))
         );
         return q.setParameter("reference", reference)
+                .executeUnique();
+	}
+
+    @Programmatic
+	public List<Transaction> listAll() {
+    	JDOQLTypedQuery<Transaction> q = isisJdoSupport.newTypesafeQuery(Transaction.class);
+        return q.executeList();
+	}
+
+	public void save(Transaction record) {
+		repositoryService.persist(record);
+	}
+
+	public Transaction getTransactionByRawdata(String rawdata) {
+    	JDOQLTypedQuery<Transaction> q = isisJdoSupport.newTypesafeQuery(Transaction.class);
+        final QTransaction cand = QTransaction.candidate();
+        q = q.filter(cand.rawdata.eq(q.stringParameter("rawdata"))
+        );
+        return q.setParameter("rawdata", rawdata)
                 .executeUnique();
 	}
 
