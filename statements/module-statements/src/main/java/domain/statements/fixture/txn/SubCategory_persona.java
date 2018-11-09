@@ -24,8 +24,8 @@ import org.apache.isis.applib.fixturescripts.PersonaWithFinder;
 import org.apache.isis.applib.fixturescripts.setup.PersonaEnumPersistAll;
 import org.apache.isis.applib.services.registry.ServiceRegistry;
 
-import domain.statements.dom.impl.txn.SubCategory;
-import domain.statements.dom.srv.txn.SubCategoryService;
+import domain.statements.dom.impl.ref.SubCategory;
+import domain.statements.dom.srv.ref.SubCategoryService;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor

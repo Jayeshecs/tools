@@ -1,7 +1,7 @@
 /**
  * 
  */
-package domain.statements.dom.impl.txn;
+package domain.statements.dom.impl.ref;
 
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.IdentityType;
@@ -22,10 +22,10 @@ import domain.statements.dom.types.Notes;
 @javax.jdo.annotations.PersistenceCapable(identityType=IdentityType.DATASTORE, schema = "statements")
 @javax.jdo.annotations.DatastoreIdentity(strategy=IdGeneratorStrategy.IDENTITY, column="id")
 @javax.jdo.annotations.Version(strategy= VersionStrategy.VERSION_NUMBER, column="version")
-@javax.jdo.annotations.Unique(name="Category_name_UNQ", members = {"name"})
+@javax.jdo.annotations.Unique(name="SubCategory_name_UNQ", members = {"name"})
 @DomainObject(auditing = Auditing.ENABLED, bounding = Bounding.BOUNDED)
 @DomainObjectLayout()  // causes UI events to be triggered
-public class Category extends AbstractNamedEntity<Category> {
+public class SubCategory extends AbstractNamedEntity<SubCategory> {
 
 	@lombok.Getter @lombok.Setter
     @Notes private String notes;
@@ -33,7 +33,7 @@ public class Category extends AbstractNamedEntity<Category> {
 	/**
 	 * @param name
 	 */
-	public Category(String name) {
+	public SubCategory(String name) {
 		super(name);
 	}
 
@@ -41,5 +41,6 @@ public class Category extends AbstractNamedEntity<Category> {
 	protected String getTitlePrefix() {
 		return "";
 	}
+
 
 }

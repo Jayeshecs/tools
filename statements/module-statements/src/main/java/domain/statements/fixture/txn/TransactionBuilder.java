@@ -24,9 +24,9 @@ import java.util.Date;
 
 import org.apache.isis.applib.fixturescripts.BuilderScriptAbstract;
 
+import domain.statements.dom.impl.ref.TransactionType;
 import domain.statements.dom.impl.txn.StatementSource;
 import domain.statements.dom.impl.txn.Transaction;
-import domain.statements.dom.impl.txn.TransactionType;
 import domain.statements.dom.srv.txn.TransactionService;
 import lombok.Getter;
 import lombok.Setter;

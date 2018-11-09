@@ -26,13 +26,13 @@ import javax.inject.Inject;
 
 import org.junit.jupiter.api.Test;
 
-import domain.statements.dom.impl.txn.Category;
+import domain.statements.dom.impl.ref.Category;
+import domain.statements.dom.impl.ref.StatementSourceType;
+import domain.statements.dom.impl.ref.SubCategory;
+import domain.statements.dom.impl.ref.TransactionType;
 import domain.statements.dom.impl.txn.StatementSource;
-import domain.statements.dom.impl.txn.StatementSourceType;
-import domain.statements.dom.impl.txn.StatementsMenu;
-import domain.statements.dom.impl.txn.SubCategory;
 import domain.statements.dom.impl.txn.Transaction;
-import domain.statements.dom.impl.txn.TransactionType;
+import domain.statements.dom.impl.view.StatementsMenu;
 import domain.statements.fixture.txn.Category_persona;
 import domain.statements.fixture.txn.StatementSource_persona;
 import domain.statements.fixture.txn.SubCategory_persona;

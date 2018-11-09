@@ -35,7 +35,7 @@ import org.apache.isis.core.metamodel.services.jdosupport.Persistable_datanucleu
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import domain.statements.dom.impl.txn.Category;
+import domain.statements.dom.impl.ref.Category;
 import domain.statements.fixture.txn.Category_persona;
 import domain.statements.integtests.SimpleModuleIntegTestAbstract;
 

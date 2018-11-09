@@ -29,10 +29,10 @@ import org.apache.isis.applib.annotation.NatureOfService;
 import org.apache.isis.applib.annotation.Programmatic;
 import org.apache.isis.applib.events.domain.ActionDomainEvent;
 
+import domain.statements.dom.impl.ref.TransactionType;
 import domain.statements.dom.impl.txn.QTransaction;
 import domain.statements.dom.impl.txn.StatementSource;
 import domain.statements.dom.impl.txn.Transaction;
-import domain.statements.dom.impl.txn.TransactionType;
 import domain.statements.dom.srv.AbstractService;
 
 @DomainService(

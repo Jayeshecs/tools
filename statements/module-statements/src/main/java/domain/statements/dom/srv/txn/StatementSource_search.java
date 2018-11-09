@@ -26,9 +26,9 @@ import org.apache.isis.applib.events.domain.ActionDomainEvent;
 import org.apache.isis.applib.services.jdosupport.IsisJdoSupport_v3_2;
 import org.apache.isis.applib.services.repository.RepositoryService;
 
+import domain.statements.dom.impl.ref.StatementSourceType;
 import domain.statements.dom.impl.txn.QStatementSource;
 import domain.statements.dom.impl.txn.StatementSource;
-import domain.statements.dom.impl.txn.StatementSourceType;
 
 /**
  * @author Prajapati

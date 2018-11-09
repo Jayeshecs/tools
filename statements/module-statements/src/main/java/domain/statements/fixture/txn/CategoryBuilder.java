@@ -21,8 +21,8 @@ package domain.statements.fixture.txn;
 
 import org.apache.isis.applib.fixturescripts.BuilderScriptAbstract;
 
-import domain.statements.dom.impl.txn.Category;
-import domain.statements.dom.srv.txn.CategoryService;
+import domain.statements.dom.impl.ref.Category;
+import domain.statements.dom.srv.ref.CategoryService;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;

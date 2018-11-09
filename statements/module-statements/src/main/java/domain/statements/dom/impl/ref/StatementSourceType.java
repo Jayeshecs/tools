@@ -1,7 +1,7 @@
 /**
  * 
  */
-package domain.statements.dom.impl.txn;
+package domain.statements.dom.impl.ref;
 
 import domain.statements.dom.IEntityEnum;
 

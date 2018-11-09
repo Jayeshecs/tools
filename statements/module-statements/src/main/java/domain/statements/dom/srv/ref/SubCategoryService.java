@@ -16,7 +16,7 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package domain.statements.dom.srv.txn;
+package domain.statements.dom.srv.ref;
 
 import javax.jdo.JDOQLTypedQuery;
 
@@ -26,29 +26,29 @@ import org.apache.isis.applib.annotation.NatureOfService;
 import org.apache.isis.applib.annotation.Programmatic;
 import org.apache.isis.applib.events.domain.ActionDomainEvent;
 
-import domain.statements.dom.impl.txn.Category;
-import domain.statements.dom.impl.txn.QCategory;
+import domain.statements.dom.impl.ref.SubCategory;
+import domain.statements.dom.impl.ref.QSubCategory;
 import domain.statements.dom.srv.AbstractEntityService;
 
 @DomainService(
         nature = NatureOfService.DOMAIN,
-        objectType = "statements.CategoryService",
-        repositoryFor = Category.class
+        objectType = "statements.SubCategoryService",
+        repositoryFor = SubCategory.class
 )
-public class CategoryService extends AbstractEntityService<Category> {
+public class SubCategoryService extends AbstractEntityService<SubCategory> {
 
     @SuppressWarnings("serial")
-	public static class CreateDomainEvent extends ActionDomainEvent<CategoryService> {}
+	public static class CreateDomainEvent extends ActionDomainEvent<SubCategoryService> {}
     
     @Action(domainEvent = CreateDomainEvent.class)
-    public Category create(final String name) {
-        return repositoryService.persist(new Category(name));
+    public SubCategory create(final String name) {
+        return repositoryService.persist(new SubCategory(name));
     }
 
     @Programmatic
-	public Category findByNameExact(String name) {
-    	JDOQLTypedQuery<Category> q = isisJdoSupport.newTypesafeQuery(Category.class);
-        final QCategory cand = QCategory.candidate();
+	public SubCategory findByNameExact(String name) {
+    	JDOQLTypedQuery<SubCategory> q = isisJdoSupport.newTypesafeQuery(SubCategory.class);
+        final QSubCategory cand = QSubCategory.candidate();
         q = q.filter(cand.name.eq(q.stringParameter("name"))
         );
         return q.setParameter("name", name)

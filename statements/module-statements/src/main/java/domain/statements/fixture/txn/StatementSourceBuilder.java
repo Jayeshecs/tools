@@ -21,8 +21,8 @@ package domain.statements.fixture.txn;
 
 import org.apache.isis.applib.fixturescripts.BuilderScriptAbstract;
 
+import domain.statements.dom.impl.ref.StatementSourceType;
 import domain.statements.dom.impl.txn.StatementSource;
-import domain.statements.dom.impl.txn.StatementSourceType;
 import domain.statements.dom.srv.txn.StatementSourceService;
 import lombok.Getter;
 import lombok.Setter;

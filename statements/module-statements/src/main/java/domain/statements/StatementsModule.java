@@ -25,9 +25,10 @@ import org.apache.isis.applib.fixturescripts.FixtureScript;
 import org.apache.isis.applib.fixturescripts.teardown.TeardownFixtureAbstract2;
 
 import domain.statements.dom.impl.SimpleObject;
-import domain.statements.dom.impl.txn.Category;
+import domain.statements.dom.impl.cfg.StatementReader;
+import domain.statements.dom.impl.ref.Category;
+import domain.statements.dom.impl.ref.SubCategory;
 import domain.statements.dom.impl.txn.StatementSource;
-import domain.statements.dom.impl.txn.SubCategory;
 import domain.statements.dom.impl.txn.Transaction;
 
 @XmlRootElement(name = "module")
@@ -39,6 +40,7 @@ public class StatementsModule extends ModuleAbstract {
             @Override
             protected void execute(ExecutionContext executionContext) {
                 deleteFrom(SimpleObject.class);
+                deleteFrom(StatementReader.class);
                 deleteFrom(Transaction.class);
                 deleteFrom(StatementSource.class);
                 deleteFrom(Category.class);

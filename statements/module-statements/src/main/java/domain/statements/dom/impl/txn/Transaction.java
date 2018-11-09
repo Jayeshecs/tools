@@ -19,6 +19,9 @@ import org.apache.isis.applib.annotation.Property;
 import org.apache.isis.applib.annotation.Title;
 
 import domain.statements.dom.AbstractEntity;
+import domain.statements.dom.impl.ref.Category;
+import domain.statements.dom.impl.ref.SubCategory;
+import domain.statements.dom.impl.ref.TransactionType;
 import domain.statements.dom.types.Notes;
 
 /**

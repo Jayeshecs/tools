@@ -95,7 +95,7 @@ msgid "Cash"
 msgstr ""
 
 
-#: domain.statements.dom.impl.txn.StatementsMenu#categories()
+#: domain.statements.dom.impl.view.StatementsMenu#categories()
 msgid "Categories"
 msgstr ""
 
@@ -903,22 +903,22 @@ msgid "Source"
 msgstr ""
 
 
-#: domain.statements.dom.impl.txn.StatementsMenu#statementSourceTypes()
+#: domain.statements.dom.impl.view.StatementsMenu#statementSourceTypes()
 msgid "Statement Source Types"
 msgstr ""
 
 
-#: domain.statements.dom.impl.txn.StatementsMenu#statementSources()
+#: domain.statements.dom.impl.view.StatementsMenu#statementSources()
 msgid "Statement Sources"
 msgstr ""
 
 
-#: domain.statements.dom.impl.txn.StatementsMenu
+#: domain.statements.dom.impl.view.StatementsMenu
 msgid "Statements"
 msgstr ""
 
 
-#: domain.statements.dom.impl.txn.StatementsMenu#subCategories()
+#: domain.statements.dom.impl.view.StatementsMenu#subCategories()
 msgid "Sub Categories"
 msgstr ""
 
@@ -943,12 +943,12 @@ msgid "Transaction Date"
 msgstr ""
 
 
-#: domain.statements.dom.impl.txn.StatementsMenu#transactionTypes()
+#: domain.statements.dom.impl.view.StatementsMenu#transactionTypes()
 msgid "Transaction Types"
 msgstr ""
 
 
-#: domain.statements.dom.impl.txn.StatementsMenu#transactions()
+#: domain.statements.dom.impl.view.StatementsMenu#transactions()
 msgid "Transactions"
 msgstr ""
 
