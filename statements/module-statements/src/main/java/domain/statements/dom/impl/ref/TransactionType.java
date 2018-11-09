@@ -13,7 +13,7 @@ import domain.statements.dom.IEntityEnum;
 public enum TransactionType implements IEntityEnum {
 
 	CREDIT(1),
-	DEBUT(2);
+	DEBIT(2);
 	
 	private int id;
 

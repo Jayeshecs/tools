@@ -5758,3 +5758,303 @@ org.datanucleus.exceptions.ClassNotResolvedException: Class "domain.statements.f
 18:29:28,382 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
 18:29:28,384 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
 18:29:28,384 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:34:29,250 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:34:29,639 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:34:30,245 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:34:30,246 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:34:30,247 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:34:30,248 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:34:30,248 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:34:30,249 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:34:30,250 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:34:30,251 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:34:43,371 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:34:43,696 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:34:44,043 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:34:44,044 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:34:44,045 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:34:44,046 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:34:44,047 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:34:44,048 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:34:44,049 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:34:44,049 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:35:58,305 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:35:58,726 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:35:59,164 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:35:59,165 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:35:59,166 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:35:59,167 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:35:59,168 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:35:59,169 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:35:59,170 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:35:59,171 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:35:59,608 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:35:59,938 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:36:00,257 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:36:00,258 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:36:00,259 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:36:00,260 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:36:00,261 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:36:00,262 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:36:00,263 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:36:00,263 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:36:42,710 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:36:43,063 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:36:43,413 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:36:43,414 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:36:43,414 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:36:43,415 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:36:43,416 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:36:43,417 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:36:43,418 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:36:43,418 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:36:49,499 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:36:49,915 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:36:50,334 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:36:50,335 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:36:50,336 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:36:50,337 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:36:50,338 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:36:50,338 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:36:50,339 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:36:50,340 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:36:52,687 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:36:53,002 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:36:53,340 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:36:53,341 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:36:53,341 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:36:53,342 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:36:53,343 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:36:53,344 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:36:53,345 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:36:53,345 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:37:26,374 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:37:26,717 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:37:27,095 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:37:27,096 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:37:27,097 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:37:27,097 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:37:27,098 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:37:27,099 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:37:27,100 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:37:27,100 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:38:00,746 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:38:01,035 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:38:01,302 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:38:01,612 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:38:01,874 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:38:01,875 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:38:01,876 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:38:01,877 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:38:01,878 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:38:01,879 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:38:01,909 (main) INFO  [DataNucleus.Enhancer] - Writing class file "E:\work\env\github\tmp\tools\statements\module-statements\target-ide\classes\domain\statements\dom\impl\txn\Transaction.class" with enhanced definition
+18:38:01,914 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:38:02,072 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:38:02,073 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:38:02,073 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:38:02,074 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:38:02,075 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:38:02,075 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:38:02,077 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:38:02,077 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:38:16,701 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:38:17,177 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:38:17,785 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:38:17,786 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:38:17,792 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:38:17,794 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:38:17,796 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:38:17,797 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:38:17,829 (main) INFO  [DataNucleus.Enhancer] - Writing class file "E:\work\env\github\tmp\tools\statements\module-statements\target-ide\classes\domain\statements\dom\impl\txn\Transaction.class" with enhanced definition
+18:38:17,836 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:38:18,557 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:38:18,920 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:38:19,340 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:38:19,341 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:38:19,342 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:38:19,343 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:38:19,344 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:38:19,345 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:38:19,346 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:38:19,346 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:39:29,239 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:39:29,558 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:39:29,887 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:39:29,888 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:39:29,888 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:39:29,889 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:39:29,890 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:39:29,891 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:39:29,892 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:39:29,892 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:40:35,850 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:40:36,316 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:40:37,498 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:40:37,500 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:40:37,501 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:40:37,512 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:40:37,527 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:40:37,530 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:40:37,533 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:40:37,534 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:40:37,847 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:40:38,169 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:40:38,516 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:40:38,517 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:40:38,517 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:40:38,518 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:40:38,519 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:40:38,520 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:40:38,521 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:40:38,521 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:49:44,118 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:49:44,592 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:49:45,105 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:49:45,106 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:49:45,107 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:49:45,109 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:49:45,110 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:49:45,111 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:49:45,113 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:49:45,113 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:50:03,101 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:50:03,449 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:50:03,789 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:50:03,790 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:50:03,791 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:50:03,792 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:50:03,793 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:50:03,793 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:50:03,795 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:50:03,795 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:50:14,601 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:50:15,018 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:50:15,363 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:50:15,364 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:50:15,365 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:50:15,366 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:50:15,367 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:50:15,368 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:50:15,369 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:50:15,369 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:57:38,875 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:57:39,267 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:57:39,735 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:57:39,737 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:57:39,738 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:57:39,740 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:57:39,741 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:57:39,742 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:57:39,744 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:57:39,744 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:57:42,827 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:57:43,365 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:57:43,838 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:57:43,839 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:57:43,840 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:57:43,841 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:57:43,842 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:57:43,842 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:57:43,844 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:57:43,844 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+18:59:17,719 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+18:59:18,139 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+18:59:18,495 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+18:59:18,496 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+18:59:18,497 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+18:59:18,497 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+18:59:18,498 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+18:59:18,499 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+18:59:18,500 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+18:59:18,500 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+19:00:45,532 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+19:00:46,036 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+19:00:46,501 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+19:00:46,502 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+19:00:46,503 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+19:00:46,505 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+19:00:46,506 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+19:00:46,507 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+19:00:46,508 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+19:00:46,509 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+19:00:51,342 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+19:00:52,385 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+19:00:52,903 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+19:00:52,905 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+19:00:52,906 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+19:00:52,908 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+19:00:52,910 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+19:00:52,911 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+19:00:52,914 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+19:00:52,914 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+19:05:17,601 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+19:05:17,939 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+19:05:18,279 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+19:05:18,280 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+19:05:18,280 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+19:05:18,281 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+19:05:18,282 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+19:05:18,283 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+19:05:18,284 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+19:05:18,284 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+19:05:32,412 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+19:05:32,735 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+19:05:33,091 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+19:05:33,092 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+19:05:33,092 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+19:05:33,094 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+19:05:33,094 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+19:05:33,095 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+19:05:33,097 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+19:05:33,097 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+19:05:51,055 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+19:05:51,588 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+19:05:52,522 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+19:05:52,523 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+19:05:52,524 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+19:05:52,525 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+19:05:52,526 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+19:05:52,527 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+19:05:52,528 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+19:05:52,528 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+19:05:55,343 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+19:05:56,060 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+19:05:56,695 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+19:05:56,698 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+19:05:56,701 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+19:05:56,703 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+19:05:56,705 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+19:05:56,713 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+19:05:56,719 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+19:05:56,719 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+19:11:32,859 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+19:11:33,176 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+19:11:33,501 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+19:11:33,502 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+19:11:33,503 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+19:11:33,504 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+19:11:33,504 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+19:11:33,505 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+19:11:33,506 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+19:11:33,507 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+19:13:56,451 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+19:13:56,759 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+19:13:57,106 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+19:13:57,107 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+19:13:57,108 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+19:13:57,109 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+19:13:57,110 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+19:13:57,111 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+19:13:57,112 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+19:13:57,112 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.
+19:20:26,159 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.1.6) for API "JDO"
+19:20:26,488 (main) WARN  [DataNucleus.MetaData] - Annotation javax.jdo.annotations.Column on class=domain.statements.dom.impl.txn.Transaction is DUPLICATED : for sub of @domain.statements.dom.types.Notes() - only the first will be used!
+19:20:26,823 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.AbstractNamedEntity" is already enhanced.
+19:20:26,824 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.SimpleObject" is already enhanced.
+19:20:26,825 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.cfg.StatementReader" is already enhanced.
+19:20:26,826 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.Category" is already enhanced.
+19:20:26,827 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.ref.SubCategory" is already enhanced.
+19:20:26,828 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.StatementSource" is already enhanced.
+19:20:26,829 (main) INFO  [DataNucleus.Enhancer] - Class "domain.statements.dom.impl.txn.Transaction" is already enhanced.
+19:20:26,829 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 7 classes.

@@ -16,7 +16,9 @@ import org.apache.isis.applib.annotation.DomainObject;
 import org.apache.isis.applib.annotation.DomainObjectLayout;
 import org.apache.isis.applib.annotation.Editing;
 import org.apache.isis.applib.annotation.Property;
+import org.apache.isis.applib.annotation.PropertyLayout;
 import org.apache.isis.applib.annotation.Title;
+import org.apache.isis.applib.annotation.Where;
 
 import domain.statements.dom.AbstractEntity;
 import domain.statements.dom.impl.ref.Category;
@@ -88,4 +90,10 @@ public class Transaction extends AbstractEntity<Transaction> {
 	@Property(editing = Editing.ENABLED)
 	@lombok.Getter @lombok.Setter
 	private String reference;
+	
+    @javax.jdo.annotations.Column(allowsNull = "true", length = 4000)
+	@Property(editing = Editing.ENABLED)
+    @PropertyLayout(hidden = Where.EVERYWHERE)
+	@lombok.Getter @lombok.Setter
+	private String rawdata;
 }
