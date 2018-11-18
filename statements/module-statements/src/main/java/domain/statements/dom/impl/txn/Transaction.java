@@ -33,7 +33,7 @@ import domain.statements.dom.types.Notes;
 @javax.jdo.annotations.PersistenceCapable(identityType=IdentityType.DATASTORE, schema = "statements")
 @javax.jdo.annotations.DatastoreIdentity(strategy=IdGeneratorStrategy.IDENTITY, column="id")
 @javax.jdo.annotations.Version(strategy= VersionStrategy.VERSION_NUMBER, column="version")
-@javax.jdo.annotations.Unique(name="Transaction_hash_UNQ", members = {"type", "transactionDate", "narration", "reference"})
+@javax.jdo.annotations.Unique(name="Transaction_hash_UNQ", members = {"source", "type", "transactionDate", "narration", "reference", "amount"})
 @DomainObject(auditing = Auditing.ENABLED)
 @DomainObjectLayout(plural = "Transactions")  // causes UI events to be triggered
 public class Transaction extends AbstractEntity<Transaction> {
