@@ -3,10 +3,6 @@
  */
 package domain.statements.dom;
 
-import javax.jdo.annotations.Inheritance;
-import javax.jdo.annotations.InheritanceStrategy;
-import javax.jdo.annotations.PersistenceCapable;
-
 import org.apache.isis.applib.annotation.Action;
 import org.apache.isis.applib.annotation.SemanticsOf;
 import org.apache.isis.applib.services.message.MessageService;

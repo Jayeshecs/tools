@@ -32,11 +32,11 @@ import org.apache.isis.core.metamodel.services.jdosupport.Persistable_datanucleu
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import domain.statements.dom.impl.txn.SubCategory;
-import domain.statements.fixture.txn.SubCategory_persona;
-import domain.statements.integtests.SimpleModuleIntegTestAbstract;
+import domain.statements.dom.impl.ref.SubCategory;
+import domain.statements.fixture.ref.SubCategory_persona;
+import domain.statements.integtests.StatementsModuleIntegTestAbstract;
 
-public class SubCategory_IntegTest extends SimpleModuleIntegTestAbstract {
+public class SubCategory_IntegTest extends StatementsModuleIntegTestAbstract {
 
 	SubCategory subCategory;
 
@@ -77,7 +77,7 @@ public class SubCategory_IntegTest extends SimpleModuleIntegTestAbstract {
         public void can_be_updated_directly() {
 
             // when
-            wrap(subCategory).updateName("new name");
+            wrap(subCategory).setName("new name");
             transactionService.nextTransaction();
 
             // then

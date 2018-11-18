@@ -10,18 +10,19 @@ import javax.jdo.query.BooleanExpression;
 
 import org.apache.isis.applib.annotation.Action;
 import org.apache.isis.applib.annotation.ActionLayout;
-import org.apache.isis.applib.annotation.InvokeOn;
 import org.apache.isis.applib.annotation.Mixin;
 import org.apache.isis.applib.annotation.Optionality;
 import org.apache.isis.applib.annotation.Parameter;
 import org.apache.isis.applib.annotation.ParameterLayout;
+import org.apache.isis.applib.annotation.PromptStyle;
+import org.apache.isis.applib.annotation.RestrictTo;
 import org.apache.isis.applib.annotation.SemanticsOf;
-import org.apache.isis.applib.services.jdosupport.IsisJdoSupport_v3_2;
+import org.apache.isis.applib.services.jdosupport.IsisJdoSupport;
 import org.apache.isis.applib.services.repository.RepositoryService;
 
+import domain.statements.dom.impl.ref.StatementSourceType;
 import domain.statements.dom.impl.txn.QStatementSource;
 import domain.statements.dom.impl.txn.StatementSource;
-import domain.statements.dom.impl.txn.StatementSourceType;
 
 /**
  * @author Prajapati
@@ -38,9 +39,10 @@ public class StatementSource_create {
 
     @Action(
     		semantics = SemanticsOf.SAFE,
-    		invokeOn = InvokeOn.OBJECT_AND_COLLECTION    		
+    		restrictTo = RestrictTo.NO_RESTRICTIONS,
+    		typeOf = StatementSource.class
     )
-    @ActionLayout(describedAs = "To create statement source")
+    @ActionLayout(describedAs = "To create statement source", promptStyle = PromptStyle.DIALOG)
     public List<StatementSource> $$(
             @Parameter(optionality = Optionality.MANDATORY)
             @ParameterLayout(named="Type", describedAs = "Type or nature of statement source")
@@ -52,7 +54,7 @@ public class StatementSource_create {
             @ParameterLayout(named="Notes", multiLine = 3, describedAs = "Description of statement source")
             final String note
     ) {
-    	JDOQLTypedQuery<StatementSource> q = isisJdoSupport.newTypesafeQuery(StatementSource.class);
+    	JDOQLTypedQuery<StatementSource> q = isisJdoSupport.getJdoPersistenceManager().newJDOQLTypedQuery(StatementSource.class);
         final QStatementSource cand = QStatementSource.candidate();
         BooleanExpression expression = null;
         expression = addTypeCriteria(type, cand, expression);
@@ -83,5 +85,5 @@ public class StatementSource_create {
     RepositoryService repositoryService;
 
     @javax.inject.Inject
-    IsisJdoSupport_v3_2 isisJdoSupport;
+    IsisJdoSupport isisJdoSupport;
 }

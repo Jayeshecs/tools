@@ -9,6 +9,9 @@ import javax.jdo.annotations.PersistenceCapable;
 
 import org.apache.isis.applib.annotation.Action;
 import org.apache.isis.applib.annotation.CommandReification;
+import org.apache.isis.applib.annotation.MemberOrder;
+import org.apache.isis.applib.annotation.PromptStyle;
+import org.apache.isis.applib.annotation.PropertyLayout;
 import org.apache.isis.applib.annotation.Publishing;
 import org.apache.isis.applib.annotation.SemanticsOf;
 
@@ -28,25 +31,16 @@ import domain.statements.dom.types.Name;
 public abstract class AbstractNamedEntity<T extends IEntity> extends AbstractEntity<T> implements Comparable<StatementSource>, IEntity {
 	
     @lombok.Getter @lombok.Setter @lombok.NonNull
-    @Name private String name;
+    @Name 
+    @PropertyLayout(promptStyle = PromptStyle.INLINE)
+    @MemberOrder(sequence = "1")
+    private String name;
 
     public String title() {
         return getTitlePrefix() + getName();
     }
 
     protected abstract String getTitlePrefix();
-
-	@SuppressWarnings("unchecked")
-	@Action(semantics = SemanticsOf.IDEMPOTENT, command = CommandReification.ENABLED, publishing = Publishing.ENABLED, associateWith = "name")
-    public T updateName(
-            @Name final String name) {
-        setName(name);
-        return (T)this;
-    }
-    
-    public String default0UpdateName() {
-        return getName();
-    }
 
     @Override
     public String toString() {

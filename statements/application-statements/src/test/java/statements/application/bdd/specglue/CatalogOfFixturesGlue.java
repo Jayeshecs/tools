@@ -19,14 +19,9 @@ package statements.application.bdd.specglue;
 import org.apache.isis.core.specsupport.specs.CukeGlueAbstract2;
 
 import cucumber.api.java.Before;
-import statements.application.fixture.scenarios.DomainAppDemo;
 import statements.application.fixture.scenarios.StatementsDemo;
 
 public class CatalogOfFixturesGlue extends CukeGlueAbstract2 {
-    @Before(value={"@DomainAppDemo"}, order=20000)
-    public void runDomainAppDemo() {
-        fixtureScripts.runFixtureScript(new DomainAppDemo(), null);
-    }
     @Before(value={"@StatementsDemo"}, order=20001)
     public void runStatementsDemo() {
         fixtureScripts.runFixtureScript(new StatementsDemo(), null);

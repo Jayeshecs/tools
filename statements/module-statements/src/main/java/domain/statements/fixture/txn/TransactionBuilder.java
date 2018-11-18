@@ -24,9 +24,9 @@ import java.util.Date;
 
 import org.apache.isis.applib.fixturescripts.BuilderScriptAbstract;
 
-import domain.statements.dom.impl.txn.StatementSource;
+import domain.statements.dom.impl.ref.TransactionType;
 import domain.statements.dom.impl.txn.Transaction;
-import domain.statements.dom.impl.txn.TransactionType;
+import domain.statements.dom.srv.txn.StatementSourceService;
 import domain.statements.dom.srv.txn.TransactionService;
 import lombok.Getter;
 import lombok.Setter;
@@ -36,13 +36,10 @@ import lombok.experimental.Accessors;
 public class TransactionBuilder extends BuilderScriptAbstract<Transaction, TransactionBuilder> {
 
     @Getter @Setter
-    private Date date;
-
-    @Getter @Setter
     private TransactionType transactionType;
 
     @Getter @Setter
-    private StatementSource statementSource;
+    private String statementSource;
 
     @Getter @Setter
     private BigDecimal amount;
@@ -61,20 +58,27 @@ public class TransactionBuilder extends BuilderScriptAbstract<Transaction, Trans
 
         checkParam("transactionType", ec, TransactionType.class);
 
-        checkParam("statementSource", ec, StatementSource.class);
+        checkParam("statementSource", ec, String.class);
 
         checkParam("amount", ec, BigDecimal.class);
-
-        checkParam("date", ec, Date.class);
 
         checkParam("narration", ec, String.class);
 
         checkParam("reference", ec, String.class);
 
-        object = wrap(TransactionService).create(statementSource, transactionType, date, amount, narration, reference);
+        object = wrap(transactionService).create(
+        		statementSourceService.findByNameExact(statementSource), 
+        		transactionType, 
+        		new Date(), 
+        		amount, 
+        		narration, 
+        		reference);
     }
 
     @javax.inject.Inject
-    TransactionService TransactionService;
+    TransactionService transactionService;
+
+    @javax.inject.Inject
+    StatementSourceService statementSourceService;
 
 }

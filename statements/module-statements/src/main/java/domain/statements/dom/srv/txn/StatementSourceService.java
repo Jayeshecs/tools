@@ -26,9 +26,9 @@ import org.apache.isis.applib.annotation.NatureOfService;
 import org.apache.isis.applib.annotation.Programmatic;
 import org.apache.isis.applib.events.domain.ActionDomainEvent;
 
+import domain.statements.dom.impl.ref.StatementSourceType;
 import domain.statements.dom.impl.txn.QStatementSource;
 import domain.statements.dom.impl.txn.StatementSource;
-import domain.statements.dom.impl.txn.StatementSourceType;
 import domain.statements.dom.srv.AbstractEntityService;
 
 @DomainService(
@@ -48,7 +48,7 @@ public class StatementSourceService extends AbstractEntityService<StatementSourc
 
     @Programmatic
 	public StatementSource findByNameExact(String name) {
-    	JDOQLTypedQuery<StatementSource> q = isisJdoSupport.newTypesafeQuery(StatementSource.class);
+    	JDOQLTypedQuery<StatementSource> q = isisJdoSupport.getJdoPersistenceManager().newJDOQLTypedQuery(StatementSource.class);
         final QStatementSource cand = QStatementSource.candidate();
         q = q.filter(cand.name.eq(q.stringParameter("name"))
         );

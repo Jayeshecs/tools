@@ -24,9 +24,12 @@ import org.apache.isis.applib.AppManifest2;
 import org.apache.isis.applib.fixturescripts.FixtureScript;
 import org.apache.isis.applib.services.metamodel.MetaModelService;
 
-import domain.statements.fixture.txn.Category_persona;
+import domain.statements.fixture.cfg.ReaderType_persona;
+import domain.statements.fixture.cfg.StatementReader_persona;
+import domain.statements.fixture.ref.Category_persona;
+import domain.statements.fixture.ref.SubCategory_persona;
 import domain.statements.fixture.txn.StatementSource_persona;
-import domain.statements.fixture.txn.SubCategory_persona;
+import domain.statements.fixture.txn.Transaction_persona;
 
 public class StatementsDemo extends FixtureScript {
 
@@ -39,10 +42,18 @@ public class StatementsDemo extends FixtureScript {
         AppManifest2 appManifest2 = metaModelService.getAppManifest2();
         ec.executeChild(this, appManifest2.getTeardownFixture());
         ec.executeChild(this, appManifest2.getRefDataSetupFixture());
+        
+        // Static Data
         ec.executeChild(this, new Category_persona.PersistAll());
         ec.executeChild(this, new SubCategory_persona.PersistAll());
+        
+        // CFG
+        ec.executeChild(this, new ReaderType_persona.PersistAll());
+        ec.executeChild(this, new StatementReader_persona.PersistAll());
+        
+        // Operational
         ec.executeChild(this, new StatementSource_persona.PersistAll());
-//        ec.executeChild(this, new Transaction_persona.PersistAll());
+        ec.executeChild(this, new Transaction_persona.PersistAll());
     }
 
     @Inject

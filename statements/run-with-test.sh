@@ -1,1 +1,1 @@
-mvn install && mvn -pl webapp jetty:run
+mvn install -s settings.xml -o && mvn -s settings.xml -o -pl webapp-statements jetty:run

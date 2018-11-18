@@ -12,8 +12,10 @@ import org.apache.isis.applib.annotation.Auditing;
 import org.apache.isis.applib.annotation.Bounding;
 import org.apache.isis.applib.annotation.DomainObject;
 import org.apache.isis.applib.annotation.DomainObjectLayout;
+import org.apache.isis.applib.annotation.MemberOrder;
 
 import domain.statements.dom.AbstractNamedEntity;
+import domain.statements.dom.impl.ref.StatementSourceType;
 
 /**
  * @author Prajapati
@@ -30,6 +32,7 @@ public class StatementSource extends AbstractNamedEntity<StatementSource> {
     @javax.jdo.annotations.Column(allowsNull = "false")
 	@Extension(vendorName="datanucleus", key="enum-value-getter", value="id")
 	@lombok.Getter @lombok.Setter @lombok.NonNull
+    @MemberOrder(sequence = "2")
 	private StatementSourceType type;
 
 	/**

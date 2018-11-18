@@ -3,7 +3,7 @@
  */
 package domain.statements.dom.srv;
 
-import org.apache.isis.applib.services.jdosupport.IsisJdoSupport_v3_2;
+import org.apache.isis.applib.services.jdosupport.IsisJdoSupport;
 import org.apache.isis.applib.services.repository.RepositoryService;
 
 /**
@@ -16,6 +16,6 @@ public abstract class AbstractService {
     protected RepositoryService repositoryService;
 
     @javax.inject.Inject
-    protected IsisJdoSupport_v3_2 isisJdoSupport;
+    protected IsisJdoSupport isisJdoSupport;
 
 }

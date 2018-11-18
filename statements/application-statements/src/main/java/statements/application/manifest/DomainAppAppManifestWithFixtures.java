@@ -22,10 +22,10 @@ import java.util.List;
 
 import org.apache.isis.applib.fixturescripts.FixtureScript;
 
-import domain.statements.fixture.SimpleObject_persona;
-import domain.statements.fixture.txn.Category_persona;
+import domain.statements.fixture.cfg.StatementReader_persona;
+import domain.statements.fixture.ref.Category_persona;
+import domain.statements.fixture.ref.SubCategory_persona;
 import domain.statements.fixture.txn.StatementSource_persona;
-import domain.statements.fixture.txn.SubCategory_persona;
 
 /**
  * Run the app but setting up any fixtures.
@@ -34,10 +34,10 @@ public class DomainAppAppManifestWithFixtures extends DomainAppAppManifest {
 
     @Override
     protected void overrideFixtures(final List<Class<? extends FixtureScript>> fixtureScripts) {
-        fixtureScripts.add(SimpleObject_persona.PersistAll.class);
         fixtureScripts.add(Category_persona.PersistAll.class);
         fixtureScripts.add(SubCategory_persona.PersistAll.class);
         fixtureScripts.add(StatementSource_persona.PersistAll.class);
+        fixtureScripts.add(StatementReader_persona.PersistAll.class);
 //        fixtureScripts.add(Transaction_persona.PersistAll.class);
     }
 

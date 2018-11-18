@@ -15,10 +15,15 @@ import org.apache.isis.applib.annotation.Auditing;
 import org.apache.isis.applib.annotation.DomainObject;
 import org.apache.isis.applib.annotation.DomainObjectLayout;
 import org.apache.isis.applib.annotation.Editing;
+import org.apache.isis.applib.annotation.MemberOrder;
 import org.apache.isis.applib.annotation.Property;
-import org.apache.isis.applib.annotation.Title;
+import org.apache.isis.applib.annotation.PropertyLayout;
+import org.apache.isis.applib.annotation.Where;
 
 import domain.statements.dom.AbstractEntity;
+import domain.statements.dom.impl.ref.Category;
+import domain.statements.dom.impl.ref.SubCategory;
+import domain.statements.dom.impl.ref.TransactionType;
 import domain.statements.dom.types.Notes;
 
 /**
@@ -30,59 +35,67 @@ import domain.statements.dom.types.Notes;
 @javax.jdo.annotations.Version(strategy= VersionStrategy.VERSION_NUMBER, column="version")
 @javax.jdo.annotations.Unique(name="Transaction_hash_UNQ", members = {"type", "transactionDate", "narration", "reference"})
 @DomainObject(auditing = Auditing.ENABLED)
-@DomainObjectLayout()  // causes UI events to be triggered
+@DomainObjectLayout(plural = "Transactions")  // causes UI events to be triggered
 public class Transaction extends AbstractEntity<Transaction> {
 	
-	@javax.jdo.annotations.PrimaryKey
-    @javax.jdo.annotations.Column(name="id", allowsNull="false")
-	@Property(editing = Editing.DISABLED)
-    @Title(prepend = "TXN ")
+	@javax.jdo.annotations.Column(name="SOURCE_ID", allowsNull = "false")
+	@Property(editing = Editing.ENABLED)
+	@MemberOrder(sequence = "1")
 	@lombok.Getter @lombok.Setter @lombok.NonNull
-	private Long id;
+	private StatementSource source;
 	
     @javax.jdo.annotations.Column(allowsNull = "false")
     @Property(editing = Editing.ENABLED)
+	@MemberOrder(sequence = "2")
 	@Extension(vendorName="datanucleus", key="enum-value-getter", value="id")
 	@lombok.Getter @lombok.Setter @lombok.NonNull
 	private TransactionType type;
 	
-    @javax.jdo.annotations.Column(name="SOURCE_ID", allowsNull = "false")
-	@Property(editing = Editing.ENABLED)
-	@lombok.Getter @lombok.Setter @lombok.NonNull
-	private StatementSource source;
-	
     @javax.jdo.annotations.Column(name="CATEGORY_ID")
 	@Property(editing = Editing.ENABLED)
+	@MemberOrder(sequence = "3")
 	@lombok.Getter @lombok.Setter
 	private Category category;
 	
     @javax.jdo.annotations.Column(name="SUB_CATEGORY_ID")
 	@Property(editing = Editing.ENABLED)
+    @MemberOrder(sequence = "4")
 	@lombok.Getter @lombok.Setter
 	private SubCategory subCategory;
 	
     @javax.jdo.annotations.Column(allowsNull = "false")
 	@Property(editing = Editing.ENABLED)
+	@MemberOrder(sequence = "5")
 	@lombok.Getter @lombok.Setter @lombok.NonNull
 	private BigDecimal amount;
 	
     @javax.jdo.annotations.Column(allowsNull = "false")
 	@Property(editing = Editing.ENABLED)
+	@MemberOrder(sequence = "6")
 	@lombok.Getter @lombok.Setter @lombok.NonNull
 	private Date transactionDate;
 	
     @javax.jdo.annotations.Column(allowsNull = "false")
 	@Property(editing = Editing.ENABLED)
+	@MemberOrder(sequence = "7")
 	@lombok.Getter @lombok.Setter @lombok.NonNull
 	private Date valueDate;
 	
     @javax.jdo.annotations.Column(allowsNull = "false")
 	@Property(editing = Editing.ENABLED)
+	@MemberOrder(sequence = "8")
 	@lombok.Getter @lombok.Setter @lombok.NonNull
 	@Notes private String narration;
 	
     @javax.jdo.annotations.Column(allowsNull = "true")
 	@Property(editing = Editing.ENABLED)
+	@MemberOrder(sequence = "9")
 	@lombok.Getter @lombok.Setter
 	private String reference;
+	
+    @javax.jdo.annotations.Column(allowsNull = "true", length = 4000)
+	@Property(editing = Editing.ENABLED)
+    @PropertyLayout(hidden = Where.STANDALONE_TABLES)
+	@lombok.Getter @lombok.Setter
+	private String rawdata;
 }

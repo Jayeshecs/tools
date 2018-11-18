@@ -1,0 +1,11 @@
+../pdfbox/
+
+module-statements/.settings/
+webapp-statements/logs/
+
+module-statements/build.log
+
+webapp-statements/.flattened-pom.xml
+module-statements/.flattened-pom.xml
+application-statements/.flattened-pom.xml
+.flattened-pom.xml

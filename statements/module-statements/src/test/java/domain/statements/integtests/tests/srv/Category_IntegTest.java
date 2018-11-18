@@ -19,8 +19,6 @@
 package domain.statements.integtests.tests.srv;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.junit.Assert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.sql.Timestamp;
@@ -29,17 +27,16 @@ import javax.inject.Inject;
 
 import org.apache.isis.applib.services.title.TitleService;
 import org.apache.isis.applib.services.wrapper.DisabledException;
-import org.apache.isis.applib.services.wrapper.InvalidException;
 import org.apache.isis.core.metamodel.services.jdosupport.Persistable_datanucleusIdLong;
 import org.apache.isis.core.metamodel.services.jdosupport.Persistable_datanucleusVersionTimestamp;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import domain.statements.dom.impl.txn.Category;
-import domain.statements.fixture.txn.Category_persona;
-import domain.statements.integtests.SimpleModuleIntegTestAbstract;
+import domain.statements.dom.impl.ref.Category;
+import domain.statements.fixture.ref.Category_persona;
+import domain.statements.integtests.StatementsModuleIntegTestAbstract;
 
-public class Category_IntegTest extends SimpleModuleIntegTestAbstract {
+public class Category_IntegTest extends StatementsModuleIntegTestAbstract {
 
     Category category;
 
@@ -80,7 +77,7 @@ public class Category_IntegTest extends SimpleModuleIntegTestAbstract {
         public void can_be_updated_directly() {
 
             // when
-            wrap(category).updateName("new name");
+            wrap(category).setName("new name");
             transactionService.nextTransaction();
 
             // then

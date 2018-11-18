@@ -10,25 +10,20 @@ import javax.jdo.query.BooleanExpression;
 
 import org.apache.isis.applib.annotation.Action;
 import org.apache.isis.applib.annotation.ActionLayout;
-import org.apache.isis.applib.annotation.BookmarkPolicy;
-import org.apache.isis.applib.annotation.CommandPersistence;
+import org.apache.isis.applib.annotation.ActionLayout.Position;
 import org.apache.isis.applib.annotation.Contributed;
-import org.apache.isis.applib.annotation.InvokeOn;
-import org.apache.isis.applib.annotation.MemberOrder;
 import org.apache.isis.applib.annotation.Mixin;
 import org.apache.isis.applib.annotation.Optionality;
 import org.apache.isis.applib.annotation.Parameter;
 import org.apache.isis.applib.annotation.ParameterLayout;
 import org.apache.isis.applib.annotation.PromptStyle;
 import org.apache.isis.applib.annotation.SemanticsOf;
-import org.apache.isis.applib.annotation.Where;
-import org.apache.isis.applib.events.domain.ActionDomainEvent;
-import org.apache.isis.applib.services.jdosupport.IsisJdoSupport_v3_2;
+import org.apache.isis.applib.services.jdosupport.IsisJdoSupport;
 import org.apache.isis.applib.services.repository.RepositoryService;
 
+import domain.statements.dom.impl.ref.StatementSourceType;
 import domain.statements.dom.impl.txn.QStatementSource;
 import domain.statements.dom.impl.txn.StatementSource;
-import domain.statements.dom.impl.txn.StatementSourceType;
 
 /**
  * @author Prajapati
@@ -44,8 +39,12 @@ public class StatementSource_search {
 	}
 
     @Action(
-    		semantics = SemanticsOf.SAFE,
-    		invokeOn = InvokeOn.OBJECT_AND_COLLECTION
+		semantics = SemanticsOf.SAFE
+    )
+    @ActionLayout(
+		contributed = Contributed.AS_ACTION, 
+		position = Position.BELOW, 
+		promptStyle = PromptStyle.DIALOG
     )
     public List<StatementSource> $$(
             @Parameter(optionality = Optionality.OPTIONAL)
@@ -55,7 +54,7 @@ public class StatementSource_search {
             @ParameterLayout(named="Name")
             final String name
     ) {
-    	JDOQLTypedQuery<StatementSource> q = isisJdoSupport.newTypesafeQuery(StatementSource.class);
+    	JDOQLTypedQuery<StatementSource> q = isisJdoSupport.getJdoPersistenceManager().newJDOQLTypedQuery(StatementSource.class);
         final QStatementSource cand = QStatementSource.candidate();
         BooleanExpression expression = null;
         expression = addTypeCriteria(type, cand, expression);
@@ -86,5 +85,5 @@ public class StatementSource_search {
     RepositoryService repositoryService;
 
     @javax.inject.Inject
-    IsisJdoSupport_v3_2 isisJdoSupport;
+    IsisJdoSupport isisJdoSupport;
 }

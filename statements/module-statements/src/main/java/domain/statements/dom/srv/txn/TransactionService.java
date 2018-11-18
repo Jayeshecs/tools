@@ -20,6 +20,7 @@ package domain.statements.dom.srv.txn;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 import javax.jdo.JDOQLTypedQuery;
 
@@ -29,10 +30,10 @@ import org.apache.isis.applib.annotation.NatureOfService;
 import org.apache.isis.applib.annotation.Programmatic;
 import org.apache.isis.applib.events.domain.ActionDomainEvent;
 
+import domain.statements.dom.impl.ref.TransactionType;
 import domain.statements.dom.impl.txn.QTransaction;
 import domain.statements.dom.impl.txn.StatementSource;
 import domain.statements.dom.impl.txn.Transaction;
-import domain.statements.dom.impl.txn.TransactionType;
 import domain.statements.dom.srv.AbstractService;
 
 @DomainService(
@@ -60,11 +61,30 @@ public class TransactionService extends AbstractService {
 
     @Programmatic
 	public Transaction findByReferenceExact(String reference) {
-    	JDOQLTypedQuery<Transaction> q = isisJdoSupport.newTypesafeQuery(Transaction.class);
+    	JDOQLTypedQuery<Transaction> q = isisJdoSupport.getJdoPersistenceManager().newJDOQLTypedQuery(Transaction.class);
         final QTransaction cand = QTransaction.candidate();
         q = q.filter(cand.reference.eq(q.stringParameter("reference"))
         );
         return q.setParameter("reference", reference)
+                .executeUnique();
+	}
+
+    @Programmatic
+	public List<Transaction> listAll() {
+    	JDOQLTypedQuery<Transaction> q = isisJdoSupport.getJdoPersistenceManager().newJDOQLTypedQuery(Transaction.class);
+        return q.executeList();
+	}
+
+	public void save(Transaction record) {
+		repositoryService.persist(record);
+	}
+
+	public Transaction getTransactionByRawdata(String rawdata) {
+    	JDOQLTypedQuery<Transaction> q = isisJdoSupport.getJdoPersistenceManager().newJDOQLTypedQuery(Transaction.class);
+        final QTransaction cand = QTransaction.candidate();
+        q = q.filter(cand.rawdata.eq(q.stringParameter("rawdata"))
+        );
+        return q.setParameter("rawdata", rawdata)
                 .executeUnique();
 	}
 

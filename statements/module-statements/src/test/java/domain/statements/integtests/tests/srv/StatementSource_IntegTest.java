@@ -34,9 +34,9 @@ import org.junit.jupiter.api.Test;
 
 import domain.statements.dom.impl.txn.StatementSource;
 import domain.statements.fixture.txn.StatementSource_persona;
-import domain.statements.integtests.SimpleModuleIntegTestAbstract;
+import domain.statements.integtests.StatementsModuleIntegTestAbstract;
 
-public class StatementSource_IntegTest extends SimpleModuleIntegTestAbstract {
+public class StatementSource_IntegTest extends StatementsModuleIntegTestAbstract {
 
 	StatementSource category;
 
@@ -77,7 +77,7 @@ public class StatementSource_IntegTest extends SimpleModuleIntegTestAbstract {
         public void can_be_updated_directly() {
 
             // when
-            wrap(category).updateName("new name");
+            wrap(category).setName("new name");
             transactionService.nextTransaction();
 
             // then

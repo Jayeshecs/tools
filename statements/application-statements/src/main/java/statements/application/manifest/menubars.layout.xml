@@ -20,16 +20,38 @@
 <mb3:menuBars xsi:schemaLocation="http://isis.apache.org/applib/layout/menubars/bootstrap3 http://isis.apache.org/applib/layout/menubars/bootstrap3/menubars.xsd http://isis.apache.org/applib/layout/component http://isis.apache.org/applib/layout/component/component.xsd http://isis.apache.org/applib/layout/links http://isis.apache.org/applib/layout/links/links.xsd" xmlns:cpt="http://isis.apache.org/applib/layout/component" xmlns:lnk="http://isis.apache.org/applib/layout/links" xmlns:mb3="http://isis.apache.org/applib/layout/menubars/bootstrap3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <mb3:primary>
         <mb3:menu>
-            <mb3:named>Simple Objects</mb3:named>
+            <mb3:named>Statements</mb3:named>
             <mb3:section>
-                <mb3:serviceAction objectType="simple.SimpleObjectMenu" id="create">
-                    <cpt:named>Create</cpt:named>
+                <mb3:serviceAction objectType="statements.StatementsMenu" id="transactions" cssClassFa="money-bill-alt">
+                    <cpt:named>Transactions</cpt:named>
                 </mb3:serviceAction>
-                <mb3:serviceAction objectType="simple.SimpleObjectMenu" id="findByName">
-                    <cpt:named>Find By Name</cpt:named>
+            </mb3:section>
+        </mb3:menu>
+        <mb3:menu>
+            <mb3:named>Static Data</mb3:named>
+            <mb3:section>
+                <mb3:serviceAction objectType="statements.StatementsMenu" id="categories">
+                    <cpt:named>Categories</cpt:named>
                 </mb3:serviceAction>
-                <mb3:serviceAction objectType="simple.SimpleObjectMenu" id="listAll">
-                    <cpt:named>List All</cpt:named>
+                <mb3:serviceAction objectType="statements.StatementsMenu" id="subCategories">
+                    <cpt:named>Sub Categories</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="statements.StatementsMenu" id="statementSources">
+                    <cpt:named>Statement Sources</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+        </mb3:menu>
+        <mb3:menu>
+            <mb3:named>Settings</mb3:named>
+            <mb3:section>
+                <mb3:serviceAction objectType="statements.StatementsMenu" id="readerTypes">
+                    <cpt:named>Reader Types</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="statements.StatementsMenu" id="statementReaders">
+                    <cpt:named>Statement Readers</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="statements.StatementsMenu" id="createStatementReader">
+                    <cpt:named>Create Statement Reader</cpt:named>
                 </mb3:serviceAction>
             </mb3:section>
         </mb3:menu>
