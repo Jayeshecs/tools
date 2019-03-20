@@ -47,6 +47,7 @@ import domain.statements.dom.srv.txn.TransactionService;
 import lombok.extern.slf4j.Slf4j;
 import statements.application.api.IReaderCallback;
 import statements.application.api.IStatementReader;
+import statements.application.categorizer.TransactionCategorizerService;
 
 @DomainObject(
         nature = Nature.VIEW_MODEL,
@@ -79,7 +80,7 @@ public class HomePageViewModel {
 	    	Properties properties = new Properties();
 	    	properties.load(new ByteArrayInputStream(reader.getProperties().getBytes()));
 			stmtReader.initialize(properties);
-			File tempFile = File.createTempFile("stmt", "reader");
+			File tempFile = File.createTempFile(file.getName(), "reader");
 			Files.write(file.getBytes(), tempFile);
 			stmtReader.read(tempFile, new IReaderCallback<Transaction>() {
 				
@@ -107,7 +108,15 @@ public class HomePageViewModel {
     		messageService.informUser(String.format("Fail to load statement file %s using reader %s", file.getName(), reader.getName()));
     	}
     }
-    
+
+    @Action(semantics = SemanticsOf.SAFE)
+    @ActionLayout(bookmarking = BookmarkPolicy.AS_ROOT)
+    public void startCategorization() {
+    	categorizerManager.categorize();
+    }
+
+    @javax.inject.Inject
+    TransactionCategorizerService categorizerManager;
 
     @javax.inject.Inject
     MessageService messageService;

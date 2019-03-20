@@ -49,6 +49,11 @@ public class HdfcBankStatementReader extends AbstractStatementReader {
 		SimpleDateFormat ddMMyy = new SimpleDateFormat(config.getProperty("dateFormat", "dd/MM/yy"));
 		try (BufferedReader reader = new BufferedReader(new FileReader(inputFile))) {
 			String line = reader.readLine();
+			if (line.isEmpty()) {
+				// extract source name from filename
+				String fileName = inputFile.getName();
+				line = fileName.substring(0, fileName.indexOf('_', fileName.indexOf('_') + 1));
+			}
 			StatementSource source = getOrCreateStatementSource(line.trim(), StatementSourceType.SAVING_ACCOUNT);
 			Collection<Transaction> batch = new ArrayList<>();
 			reader.readLine(); // skip header line
