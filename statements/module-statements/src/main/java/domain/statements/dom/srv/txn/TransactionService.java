@@ -80,12 +80,13 @@ public class TransactionService extends AbstractService {
 	}
 
 	@Programmatic
-	public List<Transaction> list(Category category, SubCategory subCategory, String narration, Boolean categorized, Date startDate, Date endDate, StatementSource statementSource) {
+	public List<Transaction> list(TransactionType type, Category category, SubCategory subCategory, String narration, Boolean categorized, Date startDate, Date endDate, StatementSource statementSource) {
     	JDOQLTypedQuery<Transaction> q = isisJdoSupport.getJdoPersistenceManager().newJDOQLTypedQuery(Transaction.class);
         final QTransaction cand = QTransaction.candidate();
         
         BooleanExpression categoryExpression = null;
         BooleanExpression subCategoryExpression = null;
+        BooleanExpression typeExpression = null;
         BooleanExpression narrationExpression = null;
         BooleanExpression startDateExpression = null;
         BooleanExpression endDateExpression = null;
@@ -101,6 +102,10 @@ public class TransactionService extends AbstractService {
         } else {
     		categoryExpression = cand.category.ne((Expression<Category>)null);
     		subCategoryExpression = cand.subCategory.ne((Expression<SubCategory>)null);
+        }
+        
+        if (type != null) {
+        	typeExpression = cand.type.eq(type);
         }
         
         if (narration != null && !narration.trim().isEmpty()) {
@@ -119,7 +124,7 @@ public class TransactionService extends AbstractService {
         	statementSourceExpression = cand.source.eq(statementSource);
         }
     	
-        BooleanExpression filterExpression = and(categoryExpression, subCategoryExpression, narrationExpression, startDateExpression, endDateExpression, statementSourceExpression);
+        BooleanExpression filterExpression = and(categoryExpression, subCategoryExpression, typeExpression, narrationExpression, startDateExpression, endDateExpression, statementSourceExpression);
     	
         if (filterExpression != null) {
     		q.filter(filterExpression);

@@ -38,6 +38,7 @@ import domain.statements.dom.impl.cfg.ReaderType;
 import domain.statements.dom.impl.cfg.StatementReader;
 import domain.statements.dom.impl.ref.Category;
 import domain.statements.dom.impl.ref.SubCategory;
+import domain.statements.dom.impl.ref.TransactionType;
 import domain.statements.dom.impl.txn.StatementSource;
 import domain.statements.dom.impl.txn.Transaction;
 import domain.statements.dom.srv.cfg.StatementReaderService;
@@ -117,6 +118,10 @@ public class StatementsMenu {
     @MemberOrder(sequence = "10")
     public List<Transaction> searchTransaction(
     		@Parameter(optionality = Optionality.OPTIONAL)
+    		@ParameterLayout(named = "Transaction type")
+    		TransactionType type,
+    		
+    		@Parameter(optionality = Optionality.OPTIONAL)
     		@ParameterLayout(named = "Category")
     		Category category,
     		
@@ -145,7 +150,7 @@ public class StatementsMenu {
     		StatementSource statementSource
     		) {
     	
-    	List<Transaction> list = transactionService.list(category, subCategory, narration, categorized, startDate, endDate, statementSource);
+    	List<Transaction> list = transactionService.list(type, category, subCategory, narration, categorized, startDate, endDate, statementSource);
     	
     	return list;
     }

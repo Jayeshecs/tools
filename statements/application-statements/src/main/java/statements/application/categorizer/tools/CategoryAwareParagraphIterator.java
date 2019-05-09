@@ -11,7 +11,6 @@ import java.util.regex.Pattern;
 
 import org.deeplearning4j.text.documentiterator.LabelAwareDocumentIterator;
 
-import domain.statements.dom.impl.txn.Transaction;
 import lombok.NonNull;
 import statements.application.categorizer.tools.Categorizer.ICategorizerDataHandler;
 
@@ -99,8 +98,7 @@ public class CategoryAwareParagraphIterator<R, L> implements LabelAwareDocumentI
 	 */
 	@Override
 	public String currentLabel() {
-		// TODO Auto-generated method stub
-		return null;
+		return (String)handler.getLabel(currentRecord);
 	}
 
 }

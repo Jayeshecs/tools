@@ -3,37 +3,35 @@
  */
 package statements.application.categorizer;
 
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
+import java.io.File;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.regex.Pattern;
 
 import javax.inject.Inject;
+import javax.persistence.Transient;
 
 import org.apache.isis.applib.annotation.DomainService;
 import org.apache.isis.applib.annotation.NatureOfService;
 import org.apache.isis.applib.annotation.Programmatic;
-import org.deeplearning4j.models.embeddings.inmemory.InMemoryLookupTable;
+import org.apache.isis.applib.services.registry.ServiceRegistry;
 import org.deeplearning4j.models.paragraphvectors.ParagraphVectors;
-import org.deeplearning4j.models.word2vec.VocabWord;
-import org.deeplearning4j.models.word2vec.wordstore.VocabCache;
-import org.deeplearning4j.text.documentiterator.LabelAwareDocumentIterator;
 import org.deeplearning4j.text.tokenization.tokenizer.preprocessor.CommonPreprocessor;
-import org.deeplearning4j.text.tokenization.tokenizerfactory.DefaultTokenizerFactory;
-import org.nd4j.linalg.api.ndarray.INDArray;
-import org.nd4j.linalg.primitives.Pair;
 
+import domain.statements.dom.impl.ref.Category;
+import domain.statements.dom.impl.ref.SubCategory;
+import domain.statements.dom.impl.ref.TransactionType;
 import domain.statements.dom.impl.txn.Transaction;
+import domain.statements.dom.srv.ref.CategoryService;
+import domain.statements.dom.srv.ref.SubCategoryService;
 import domain.statements.dom.srv.txn.TransactionService;
-import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 import statements.application.categorizer.tools.Categorizer;
 import statements.application.categorizer.tools.Categorizer.ICategorizerDataHandler;
-import statements.application.categorizer.tools.LabelSeeker;
-import statements.application.categorizer.tools.MeansBuilder;
+import statements.application.services.categorizer.CategorizationTransaction;
+import statements.application.services.categorizer.CategorizationViewModel;
 
 /**
  * @author jayeshecs
@@ -48,6 +46,91 @@ import statements.application.categorizer.tools.MeansBuilder;
 public class TransactionCategorizerService {
 	
 	private static final Pattern wordSeparatorPattern = Pattern.compile("[\\.:@$#,_[-]\"\'\\(\\)\\[\\]|/?!;]+");
+	
+	@Inject
+	private TransactionService transactionService;
+	
+	@Inject
+	private CategoryService categoryService;
+	
+	@Inject
+	private SubCategoryService subCategoryService;
+	
+	@Transient
+	private ICategorizerDataHandler<Transaction, String> handler = new TransactionCategorizerDataHandler();
+	
+	public TransactionCategorizerService() {
+		// DO NOTHING
+	}
+	
+	@Programmatic
+	public CategorizationViewModel categorize() {
+		CategorizationViewModel result = categorizeByTransactionType(TransactionType.CREDIT);
+		result.getPendingApprovalTransactions().addAll(categorizeByTransactionType(TransactionType.DEBIT).getPendingApprovalTransactions());
+		return result;
+	}
+	
+	@Programmatic
+	public void train() {
+		Categorizer<Transaction, String> categorizer = new Categorizer<>(handler, new NarrationPreProcessor());
+		trainByTransactionType(TransactionType.CREDIT, categorizer, true);
+		trainByTransactionType(TransactionType.DEBIT, categorizer, true);
+	}
+	
+	@Programmatic
+	public CategorizationViewModel categorizeByTransactionType(TransactionType type) {
+		// https://github.com/deeplearning4j/dl4j-examples/blob/master/dl4j-examples/src/main/java/org/deeplearning4j/examples/nlp/paragraphvectors/ParagraphVectorsClassifierExample.java
+		
+		Categorizer<Transaction, String> categorizer = new Categorizer<>(handler, new NarrationPreProcessor());
+		
+		ParagraphVectors model = trainByTransactionType(type, categorizer, false);
+		
+		List<Transaction> listUncategorized = transactionService.list(type, null, null, null, true, null, null, null);
+		
+		Map<Transaction, String> categorized = categorizer.categorize(model, listUncategorized);
+		
+		CategorizationViewModel result = new CategorizationViewModel();
+		serviceRegistery.injectServicesInto(result);
+		for (Entry<Transaction, String> entry : categorized.entrySet()) {
+			Transaction transaction = entry.getKey();
+			Category category = getCategoryFromLabel(entry.getValue());
+			SubCategory subCategory = getSubCategoryFromLabel(entry.getValue());
+			if (category != null && subCategory != null) {
+				log.info(String.format("%s => Category: %s, Sub-category: %s", handler.getParagraph(transaction), category.getName(), subCategory.getName()));
+				result.addTransactionForApproval(transaction, category, subCategory);
+			}
+//			transaction.setCategory(category);
+//			transaction.setSubCategory(subCategory);
+//			transactionService.save(transaction);
+		}
+		
+		return result;
+	}
+
+	private ParagraphVectors trainByTransactionType(TransactionType type, Categorizer<Transaction, String> categorizer, boolean forceTrain) {
+		// Get all categorized transactions for training purpose
+		List<Transaction> listAllCategorized = transactionService.list(type, null, null, null, false, null, null, null);
+		
+		File modelFile = new File(type.name() + "transaction_categorizer_model.zip");
+		ParagraphVectors model = forceTrain ? null : categorizer.loadModel(modelFile);
+		
+		if (model == null) {
+			model = categorizer.train(listAllCategorized);
+			categorizer.save(model, modelFile);
+		}
+		return model;
+	}
+
+	private SubCategory getSubCategoryFromLabel(String value) {
+		return subCategoryService.findByNameExact(value.split("_")[1]);
+	}
+
+	private Category getCategoryFromLabel(String value) {
+		return categoryService.findByNameExact(value.split("_")[0]);
+	}
+	
+	@Inject
+	ServiceRegistry serviceRegistery;
 		
 	/**
 	 * Replace common word separator e.g. underscore (_) and dash (-) with whitespace
@@ -69,109 +152,31 @@ public class TransactionCategorizerService {
 		}
 	}
 	
-	@Inject
-	private TransactionService transactionService;
-	private DefaultTokenizerFactory tokenizerFactory;
-	
-	public TransactionCategorizerService() {
-		// DO NOTHING
-	}
-	
-	@Programmatic
-	public void categorize() {
-		// https://github.com/deeplearning4j/dl4j-examples/blob/master/dl4j-examples/src/main/java/org/deeplearning4j/examples/nlp/paragraphvectors/ParagraphVectorsClassifierExample.java
-		
-		// Get all categorized transactions for training purpose
-		List<Transaction> listAllCategorized = transactionService.list(null, null, null, false, null, null, null);
-		
-		ICategorizerDataHandler<Transaction, String> handler = new ICategorizerDataHandler<Transaction, String>() {
-
-			@Override
-			public String getLabel(Transaction transaction) {
-				if (transaction == null || transaction.getCategory() == null) {
-					// This should never happen !
-					return null;
-				}
-				String category = transaction.getCategory().getName();
-				String subCategory = "";
-				if (transaction.getSubCategory() != null) {
-					subCategory = transaction.getSubCategory().getName();
-				}
-				String label = String.format("%s_%s", category, subCategory);
-				return label;
-			}
-
-			@Override
-			public String getParagraph(Transaction data) {
-				// TODO Auto-generated method stub
+	class TransactionCategorizerDataHandler implements ICategorizerDataHandler<Transaction, String> {
+		@Override
+		public String getLabel(Transaction transaction) {
+			if (transaction == null || transaction.getCategory() == null) {
+				// This should never happen !
 				return null;
 			}
-		};
-		Categorizer<Transaction, String> categorizer = new Categorizer(handler, new NarrationPreProcessor());
-
-		// initialize tokenizer factory
-		tokenizerFactory = new DefaultTokenizerFactory();
-		tokenizerFactory.setTokenPreProcessor(new NarrationPreProcessor());
-
-		ParagraphVectors paragraphVectors = new ParagraphVectors.Builder()
-	              .learningRate(0.025)
-	              .minLearningRate(0.001)
-	              .batchSize(100)
-	              .epochs(1)
-	              .iterations(5)
-	              //.layerSize(100)
-	              .iterate(new CategoryAwareNarrationIterator(listAllCategorized))
-	              .trainWordVectors(true)
-	              //.minWordFrequency(2)
-	              .tokenizerFactory(tokenizerFactory)
-	              .build();
-		
-		// start model training
-		paragraphVectors.fit();
-		
-		VocabCache<VocabWord> vocab = paragraphVectors.getVocab();
-		log.info(String.format("Vocab Detail:\n"
-				+ "Total words: %d\n"
-				+ "Total Docs: %d\n"
-				+ "Total Word Occurances: %d\n"
-				+ "Total Tokens: %d\n"
-				+ "Words: %s\n"
-				, vocab.numWords()
-				, vocab.totalNumberOfDocs()
-				, vocab.totalWordOccurrences()
-				, vocab.tokens().size()
-				, vocab.words()));
-		for (VocabWord vocabWord : vocab.vocabWords()) {
-			log.info(String.format("Is Label: %s, Word: %s (%s)"
-					, vocabWord.isLabel()
-					, vocabWord.getLabel()
-					, vocabWord));
+			String category = transaction.getCategory().getName();
+			String subCategory = "";
+			if (transaction.getSubCategory() != null) {
+				subCategory = transaction.getSubCategory().getName();
+			}
+			String label = String.format("%s_%s", category, subCategory);
+			return label;
 		}
 		
-		List<Transaction> listUncategorized = transactionService.list(null, null, null, true, null, null, null);
-
-		MeansBuilder meansBuilder = new MeansBuilder(
-				(InMemoryLookupTable<VocabWord>) paragraphVectors.getLookupTable(),
-				tokenizerFactory);
-		
-		List<String> labels = paragraphVectors.getLabelsSource().getLabels();
-		
-		LabelSeeker seeker = new LabelSeeker(new ArrayList<String>(labels),
-				(InMemoryLookupTable<VocabWord>) paragraphVectors.getLookupTable());
-		
-		long count = 0;
-		for (Transaction transaction : listUncategorized) {
-			INDArray vector = meansBuilder.documentAsVector(transaction.getNarration());
-			Pair<String, Double> scores = seeker.getScores(vector);
-			if (scores == null) {
-				continue;
-			}
-			if (scores.getValue().isNaN()) {
-				continue;
-			}
-			count++;
-			log.info(String.format("%s = %s (%f)", transaction.getNarration(), scores.getKey(), scores.getValue()));
+		@Override
+		public String toLabel(String key) {
+			return key;
 		}
-		log.info(String.format("Total %d/%d transactions categorized", count, listUncategorized.size()));
+
+		@Override
+		public String getParagraph(Transaction data) {
+			return data.getNarration(); //new StringBuilder(data.getType().name()).append(' ').append(data.getNarration()).toString();
+		}
 	}
+	
 }

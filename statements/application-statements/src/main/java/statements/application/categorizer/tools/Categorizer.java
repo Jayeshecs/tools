@@ -3,11 +3,17 @@
  */
 package statements.application.categorizer.tools;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.deeplearning4j.models.embeddings.inmemory.InMemoryLookupTable;
+import org.deeplearning4j.models.embeddings.loader.WordVectorSerializer;
 import org.deeplearning4j.models.paragraphvectors.ParagraphVectors;
 import org.deeplearning4j.models.word2vec.VocabWord;
 import org.deeplearning4j.models.word2vec.wordstore.VocabCache;
@@ -42,6 +48,14 @@ public class Categorizer<R, L> {
 		L getLabel(R data);
 		
 		/**
+		 * Label key to Label data
+		 * 
+		 * @param key
+		 * @return <L>
+		 */
+		L toLabel(String key);
+		
+		/**
 		 * @param <R> data
 		 * @return sentence or paragraph or sequence of words for given <R> data
 		 */
@@ -72,12 +86,12 @@ public class Categorizer<R, L> {
 	              .learningRate(0.025)
 	              .minLearningRate(0.001)
 	              .batchSize(100)
-	              .epochs(1)
+	              .epochs(3)
 	              .iterations(5)
 	              //.layerSize(100)
-	              .iterate(new CategoryAwareParagraphIterator<R, L>(this.handler, listAllCategorized))
+	              .iterate(new CategoryAwareParagraphIterator<R, L>(this.handler, Collections.synchronizedCollection(listAllCategorized)))
 	              .trainWordVectors(true)
-	              //.minWordFrequency(2)
+	              .minWordFrequency(2)
 	              .tokenizerFactory(tokenizerFactory)
 	              .build();
 		
@@ -115,7 +129,7 @@ public class Categorizer<R, L> {
 	 * @param paragraphVectors
 	 * @param listUncategorized
 	 */
-	public void categorize(ParagraphVectors paragraphVectors, Collection<R> listUncategorized) {
+	public Map<R, L> categorize(ParagraphVectors paragraphVectors, Collection<R> listUncategorized) {
 
 		MeansBuilder meansBuilder = new MeansBuilder(
 				(InMemoryLookupTable<VocabWord>) paragraphVectors.getLookupTable(),
@@ -127,8 +141,10 @@ public class Categorizer<R, L> {
 				(InMemoryLookupTable<VocabWord>) paragraphVectors.getLookupTable());
 		
 		long count = 0;
+		Map<R, L> result = new HashMap<>();
 		for (R data : listUncategorized) {
-			INDArray vector = meansBuilder.documentAsVector(handler.getParagraph(data));
+			String paragraph = handler.getParagraph(data);
+			INDArray vector = meansBuilder.documentAsVector(paragraph);
 			Pair<String, Double> scores = seeker.getScores(vector);
 			if (scores == null) {
 				continue;
@@ -137,9 +153,36 @@ public class Categorizer<R, L> {
 				continue;
 			}
 			count++;
-			log.info(String.format("%s = %s (%f)", handler.getParagraph(data), scores.getKey(), scores.getValue()));
+			result.put(data, handler.toLabel(scores.getKey()));
+			log.info(String.format("%s = %s (%f)", paragraph, scores.getKey(), scores.getValue()));
 		}
 		log.info(String.format("Total %d/%d record categorized", count, listUncategorized.size()));
+		return result;
+	}
+
+	public void save(ParagraphVectors model, File file) {
+		try {
+			WordVectorSerializer.writeParagraphVectors(model, file);
+		} catch (Exception e) {
+			log.error("Exception occurred while writing model", e);
+		}
+	}
+
+	public ParagraphVectors loadModel(File file) {
+		if (file == null || !file.exists()) {
+			return null;
+		}
+		try {
+			ParagraphVectors result = WordVectorSerializer.readParagraphVectors(file);
+
+			// print vocab
+			printVocab(result);
+
+			return result;
+		} catch (IOException e) {
+			log.error("I/O error occurred while reading paragraph vectors", e);
+		}
+		return null;
 	}
 	
 }

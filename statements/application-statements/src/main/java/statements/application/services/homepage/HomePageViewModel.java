@@ -48,6 +48,7 @@ import lombok.extern.slf4j.Slf4j;
 import statements.application.api.IReaderCallback;
 import statements.application.api.IStatementReader;
 import statements.application.categorizer.TransactionCategorizerService;
+import statements.application.services.categorizer.CategorizationViewModel;
 
 @DomainObject(
         nature = Nature.VIEW_MODEL,
@@ -111,8 +112,14 @@ public class HomePageViewModel {
 
     @Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(bookmarking = BookmarkPolicy.AS_ROOT)
-    public void startCategorization() {
-    	categorizerManager.categorize();
+    public CategorizationViewModel startCategorization() {
+    	return categorizerManager.categorize();
+    }
+
+    @Action(semantics = SemanticsOf.SAFE)
+    @ActionLayout(bookmarking = BookmarkPolicy.AS_ROOT, named = "Train")
+    public void train() {
+    	categorizerManager.train();
     }
 
     @javax.inject.Inject

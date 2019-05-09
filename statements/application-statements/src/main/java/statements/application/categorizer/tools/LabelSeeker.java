@@ -25,9 +25,14 @@ public class LabelSeeker {
 	private List<String> labelsUsed;
 	private InMemoryLookupTable<VocabWord> lookupTable;
 
+	/**
+	 * @param labelsUsed
+	 * @param lookupTable
+	 */
 	public LabelSeeker(List<String> labelsUsed, InMemoryLookupTable<VocabWord> lookupTable) {
-		if (labelsUsed.isEmpty())
+		if (labelsUsed.isEmpty()) {
 			throw new IllegalStateException("You can't have 0 labels used for ParagraphVectors");
+		}
 		this.lookupTable = lookupTable;
 		this.labelsUsed = labelsUsed;
 	}
@@ -48,18 +53,23 @@ public class LabelSeeker {
 		});
 		for (String label : labelsUsed) {
 			INDArray vecLabel = lookupTable.vector(label);
-			if (vecLabel == null)
+			if (vecLabel == null) {
 				throw new IllegalStateException("Label '" + label + "' has no known vector!");
-
+			}
 			double sim = Transforms.cosineSim(vector, vecLabel);
 			// if not a number then ignore it
 			if (Double.isNaN(sim)) {
 				continue;
 			}
-			log.info(String.format("%s = %f", label, sim));
+//			log.info(String.format("%s = %f", label, sim));
 			result.add(new Pair<String, Double>(label, sim));
 		}
-		return result.isEmpty() ? null : result.iterator().next();
+		if (result.isEmpty()) {
+			return null;
+		}
+		Pair<String, Double> score = result.iterator().next();
+//		return score;
+		return score.getValue().compareTo(new Double(0.3)) > 0 ? null : score; 
 	}
 
 }
